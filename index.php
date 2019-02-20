@@ -21,6 +21,7 @@ else
     require_once "controller/$controller.controller.php";
     $controller = ucwords($controller) . 'Controller';
     $controller = new $controller;
+    //HolaJose
     
     // Llama la accion
     call_user_func( array( $controller, $accion ) );
