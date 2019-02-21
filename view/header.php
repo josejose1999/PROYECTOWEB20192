@@ -1,4 +1,5 @@
-<!doctype html>
+<!DOCTYPE html>
+<html lang="es">
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
@@ -10,7 +11,6 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        </style>
         <link rel="icon" href="img/titulo.png">
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
@@ -25,9 +25,9 @@
 
     </head>
     <body class="animate" data-spy="scroll" data-target="#scrollspy" data-offset="1">
- <!--BARRA DE NAVEGACIONCABEZA DE ZAPO-->  
+ <!--BARRA DE NAVEGACIONCABEZA DE ZAPO-->
 
-<!--BUFON VALE VRGA-->  
+<!--BUFON VALE VRGA-->
 
  <?php
    ini_set('display_errors','off');
