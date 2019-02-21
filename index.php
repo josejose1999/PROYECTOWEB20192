@@ -26,6 +26,17 @@ if(!isset($_REQUEST['c']))
     $controller = ucwords($controller) . 'Controller';
     $controller = new $controller;
     $controller->IndexCarrito();  
+    }else if ($_REQUEST['c']=='Armazones') {
+    require_once "controller/$controller.controller.php";
+    $controller = ucwords($controller) . 'Controller';
+    $controller = new $controller;
+    $controller->IndexArmazones();  
+    }
+    else if ($_REQUEST['c']=='Marcas') {
+    require_once "controller/$controller.controller.php";
+    $controller = ucwords($controller) . 'Controller';
+    $controller = new $controller;
+    $controller->IndexMarcas();  
     }
 }
 

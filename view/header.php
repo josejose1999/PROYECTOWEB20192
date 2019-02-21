@@ -104,19 +104,16 @@
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Productos
                                 <span class="caret"></span></a>
                             <ul class="dropdown-menu">
-                                <li><a href="productos.html">Armazones y Gafas</a></li>
-                                <li><a href="marcas.html">Marcas</a></li>
+                                <li><a href="?c=Armazones">Armazones y Gafas</a></li>
+                                <li><a href="?c=Marcas">Marcas</a></li>
                             </ul>
                         </li>
                         <li><a href="?c=Nosotros">Nosotros</a></li>
                         <li><a href="?c=Servicios">Servicios</a></li>
                         <li><a href="?c=Carrito"  style="width:auto;">Carrito de compras</a></li>
                        <li><a href="#" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</a></li>
-                       
-                        
                         <li> <?php echo "<div class='alert alert-success' role='alert'><strong>Bienvenido</strong> $row[Name]"; ?> </li>
                          <li> </li>
-
                         <div class="navbar-toggle"><?php if($row[Name]!=""){ ?></div>
                          <li><?php session_destroy(); ?><a href="index.php" >cerrar sesion</a></li>
                          <div><?php }?></div>

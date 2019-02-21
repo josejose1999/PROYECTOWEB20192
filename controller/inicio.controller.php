@@ -31,4 +31,20 @@ class InicioController{
         require_once 'view/footer.php';
         //sapo
     }
+    public function IndexArmazones(){
+
+        require_once 'view/header.php';
+        echo "<h1>Aqui va Armazones</h1>";
+       // require_once 'view/inicio/inicio.php';
+        require_once 'view/footer.php';
+        //sapo
+    }
+     public function IndexMarcas(){
+
+        require_once 'view/header.php';
+        echo "<h1>Aqui va Marcas</h1>";
+       // require_once 'view/inicio/inicio.php';
+        require_once 'view/footer.php';
+        //sapo
+    }
 }
