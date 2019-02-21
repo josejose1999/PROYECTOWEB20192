@@ -1,0 +1,491 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+body{
+	font-size: 16px;
+}
+.color{
+  background-color: red
+}
+.color1{
+  background-color: green
+}
+.color2{
+  background-color: blue
+}
+.color3{
+  background-color: yellow
+}
+
+
+body {font-family: Arial, Helvetica, sans-serif;}
+
+.icono{
+  color:blue;
+  size:30px;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password], input[type=email], input[type=date]{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button.bt{
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  color: white;
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+	margin-top: 0;
+  text-align: center;
+  margin: 0px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 100%;
+}
+
+.ctn-1 {
+  margin-top: 1%;
+  padding: 8px;
+}
+
+span.psw {
+  float: right;
+  padding: 10%;
+  margin-top: -20%;
+  margin-bottom: -10%;
+}
+
+/* The Modal (background) */
+.modal {
+
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 100px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+    margin-top: 0px;
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}s
+
+h3.acomodar{
+  padding: 2px;
+}
+
+.contenido-scrollspy{
+  overflow-y: scroll;
+  height: 1200px;
+
+}
+.colorfooter{
+  background-color: #d9d9d9;
+}
+.fondob{
+  background-color: white;
+
+  width: 100%;
+  height: 1500px;
+}
+.fondon{
+  color: white;
+  background-color: white;
+  
+  width: 100%;
+  height: 1500px;
+}
+.ajusteizq{
+  width: 100%;
+
+  float: left;
+}
+.ajusteder{
+  width: 100%;
+  float: left;
+}
+.colorin{
+  color: black;
+}
+
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+    position: relative;
+    min-height: 1px;
+    /*padding-right: 1px;
+    padding-left: 1px ;*/
+}
+.ajuste{
+  padding: 20px;
+  color: black;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.posicion{
+  position: relative;
+}
+
+
+
+/* -------------------------------------------PRACTICA------------------------------------------ */
+
+.app-header{
+background: url("../img/img1.jpg") no-repeat center top fixed;
+font-family: "Avenir",Futura, Helvetica,sans-serif;
+letter-spacing: 2px;
+text-transform: uppercase;
+padding-bottom: 80px;
+}
+.app-navbar{
+  background: white;
+  border-radius: 0;
+
+}
+.app-link{
+  color: white;
+  text-shadow: none;
+}
+.app-link:hover{
+  color: white;
+}
+.app-nav>li>a{
+  color: white;
+  text-shadow: none;
+}
+.app-nav>li>a:hover{
+  color: white;
+  background-color: black;
+}
+.app-icon{
+  background: white;
+}
+.app-seccion1{
+  width: 60%;
+  margin: 0 auto;
+  margin-top: 170px;
+}
+.app-titulo{
+  text-align: center;
+  color: white;
+  font-size: 2.8em;
+  margin-bottom: 35px;
+}
+.app-resaltar{
+  color: #0080d6;
+}
+.app-descripcion{
+  text-align: center;
+  color: black;
+  font-size: 1em;
+  margin-bottom: 100px;
+}
+.app-formulario1{
+  padding: 5px;
+  width: 100%
+  margin 0 auto;
+}
+.app-formulario2{
+  padding: 5px;
+  background: rgb(0,0,0,0.6);
+}
+.app-input{
+  height: 50px;
+  margin-top: 10px;
+}
+.app-boton{
+
+  margin-top: 8px;
+  height: 50px;
+  background: #0080d6;
+  color: white;
+}
+.app-boton:hover{
+  color: white;
+}
+
+/* -------------------------------------------CONTENEDOR------------------------------------------ */
+
+.app-seccion2{
+  margin: 40px 0;
+  margin-top: 10px;
+}
+.app-titulo2{
+  margin-top: 0;
+}
+.app-separador{
+  width: 25%;
+  border-bottom: 1px solid #0080d6;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.app-justificar{
+  text-align: justify;
+  color: #727272;
+}
+.app-media{
+  margin-top: 70px;
+}
+.app-glyphicon1{
+  background-color: #0080d6;
+  color: white;
+  font-size: 30px;
+  padding: 10px;
+}
+.app-seccion3{
+  background: #f7f8fa;
+  padding: 80px 0; 
+}
+
+/* -------------------------------------------DISEÑO DE CARACTERISTICAS------------------------------------------ */
+.app-contenedor{
+  padding-top: 20px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+.app-separador2{
+  width: 15%;
+  border-bottom: 1px solid  #0080d6;
+  margin: auto;
+}
+.glyphicon2{
+  color: #0080d6;
+  font-size: 60px;
+}
+.app-descripcion2{
+  color: #727272;
+}
+/* -------------------------------------------DISEÑO DE PAQUETES------------------------------------------ */
+
+.app-lista1{
+  background-color: #323232;
+  color: white;
+  text-align: center;
+}
+.app-lista2{
+  background-color: #0080d6;
+  color: white;
+  text-align: center;
+}
+.app-precio{
+  text-align: center;
+}
+.app-pago{
+  font-weight: bold;
+  margin-right: 30px;
+}
+.app-btn1{
+  background-color: white;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border: 1px solid black;
+}
+.app-btn2{
+  background-color: #0080d6;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: white;
+}
+
+/* -------------------------------------------CONTINUACION------------------------------------------ */
+
+@media(max-width: 760px) {
+  #titulo_principal{
+    font-size: 0.8em;
+
+  }
+  .tamaño{ 
+  font-size: 10px;
+}
+ 
+}
+
+.carousel-caption{
+  z-index: 0;
+}
+.carousel-indicators{
+  z-index: 1;
+}
+.arreglar{
+  padding: 0;
+
+}
+.bordes{
+  width: 100%;
+}
+.navbar-header{
+  background: transparent;
+}
+
+.Registra{
+background-color:  #ff4d4d;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 0.1%;
+}
+.footer{
+  text-align: center;
+  background-color: #333333;
+  color: white;
+
+}
+hr{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.caja{
+  margin: auto;
+  margin-left: auto;
+  margin-right:auto;
+
+}
+@media(max-width: 767px) {
+  .ajustate{
+   text-align-last: center;
+  }
+ 
+}
+
+
+/*tarjeta*/
+form   {
+margin-top: 0%;
+margin-right: 10%;
+margin-bottom: 0%;
+margin-left: 10%;
+}
+
+
+div.jumbotron{
+ 
+    background: linear-gradient(to bottom right, #99bbff 35%, #ffffff 112%);
+ background-size: cover;
+height: 100%;
+ position: relative;
+
+}
+
+
+
+.nosotros1{
+border-radius: 10px;
+    background: linear-gradient(to bottom right, #99bbff 35%, #ffffff 112%);
+ padding-top: 10px;
+ padding-bottom: 10px;
+ font-style:italic;
+  font-weight:bold;
+  font-size:2em;
+  font-color:#ffffff;
+  font-family:'Helvetica','Verdana','Monaco',sans-serif;
+  }
+  
+
+.btgusta{
+  background:#F19700;
+  color:#FFFFFF;
+  border-radius: 35px !important;
+  border:none !important;
+  margin-top:-5px;
+  font-size:16px;
+  padding-left:30px;
+  padding-right:30px;
+}
+
+h4{
+  font-weight: bold;
+}
+
+.hg_section {padding-top:35px; padding-bottom: 35px; padding-left: 25%; padding-left: 20%;}
+h1.nosotros{
+  text-align: center;
+   font-family: 'Charm', cursive;
+}
+p.parra{
+  text-align : justify;
+}

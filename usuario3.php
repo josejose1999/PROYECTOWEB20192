@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!doctype html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
@@ -24,16 +27,11 @@
         <script src="js/main.js"></script>
 
     </head>
-    <body class="animate" data-spy="scroll" data-target="#scrollspy" data-offset="1">
+    <bodyclass="animate" data-spy="scroll" data-target="#scrollspy" data-offset="1">
  <!--BARRA DE NAVEGACION-->  
 
-
-
-
  <?php
-   ini_set('display_errors','off');
-   ini_set('display_startup_erros', 'off');
-   error_reporting(0);
+
     // Connection info. file
     include 'conn.php'; 
     
@@ -68,13 +66,14 @@
         $_SESSION['loggedin'] = true;
         $_SESSION['name'] = $row['Name'];
         $_SESSION['start'] = time();
-        $_SESSION['expire'] = $_SESSION['start'] + (1 * 60) ;                       
+        $_SESSION['expire'] = $_SESSION['start'] + (60 * 60) ;                       
         
         
          
 
     } else {
-                
+        echo "<div class='alert alert-danger' role='alert'>Email or Password are incorrects!
+        <p><a href='login.html'><strong>Please try again!</strong></a></p></div>";          
     }   
 ?>
 
@@ -91,7 +90,7 @@
 
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right app-nav">
-                        <li><a href="index.php" >Inicio</a></li>
+                        <li><a href="usuario3.html" >Inicio</a></li>
                          <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Secciones
                                 <span class="caret"></span></a>
@@ -113,20 +112,9 @@
                         <li><a href="nosotros.html" >Nosotros</a></li>
                         <li><a href="servicios.html">Servicios</a></li>
 
-                        <li><a href="./carrito/productos.php"  style="width:auto;">Carrito de compras</a></li>
                        <li><a href="#" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</a></li>
                        
-                        
-                        <li> <?php echo "<div class='alert alert-success' role='alert'><strong>Bienvenido</strong> $row[Name]"; ?> </li>
-                         <li> </li>
-
-                        <div class="navbar-toggle"><?php if($row[Name]!=""){ ?></div>
-                         <li><?php session_destroy(); ?><a href="index.php" >cerrar sesion</a></li>
-                         <div><?php }?></div>
-
-                         <div class="navbar-toggle"><?php if($row[Name]=="administrador"){ ?></div>
-                         <li><a href="administrar.php" >ADMINISTRACION</a></li>
-                         <div><?php }?></div>
+                         <li> <?php echo "<div class='alert alert-success' role='alert'><strong>Bienvenido</strong> $row[Name]"; ?> </li>
                         
                     </ul>
                 </div>
@@ -137,7 +125,7 @@
 
 <!--SLIDER-->
 <div class="caja">
-        <div id="carousel-1" class="carousel slide " action="check-login.php" data-ride="carousel">
+        <div id="carousel-1" class="carousel slide " data-ride="carousel">
                     <!--Indicadores-->
                     <ol class="carousel-indicators">
                         <li data-target="#carousel-1" data-slide-to="0" class="active"></li>
@@ -188,7 +176,7 @@
  <!--LOGIN--> 
 <div id="id01" class="modal">
   
-  <form  class="modal-content animate"  method="post">
+  <form  class="modal-content animate" method="post">
     <div class="imgcontainer">
       
       <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
