@@ -1,3 +1,4 @@
+<div class="container">
 <h1 class="page-header">Usuarios</h1>
 
 <div class="well well-sm text-right">
@@ -34,3 +35,4 @@
     <?php endforeach; ?>
     </tbody>
 </table> 
+</div>

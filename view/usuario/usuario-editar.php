@@ -1,3 +1,4 @@
+<div class="container">
 <h1 class="page-header">
     <?php echo $usua->id != null ? $usua->Nombre : 'Nuevo Registro'; ?>
 </h1>
@@ -44,7 +45,7 @@
         <button class="btn btn-success">Guardar</button>
     </div>
 </form>
-
+<br><br>
 <script>
     $(document).ready(function(){
         $("#frm-usuario").submit(function(){
@@ -52,3 +53,4 @@
         });
     })
 </script>
+</div>
