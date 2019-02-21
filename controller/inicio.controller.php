@@ -49,4 +49,5 @@ class InicioController{
         require_once 'view/footer.php';
         
     }
+    
 }

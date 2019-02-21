@@ -42,7 +42,7 @@
     <hr />
     
     <div class="text-right">
-        <button class="btn btn-success">Guardar</button>
+      <button  class="btn btn-success">Guardar</button>
     </div>
 </form>
 <br><br>

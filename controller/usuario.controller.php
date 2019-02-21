@@ -41,11 +41,12 @@ class UsuarioController{
             ? $this->model->Actualizar($usua)
             : $this->model->Registrar($usua);
         
-        header('Location: index.php');
+        header('Location: index.php?c=Usuario');
     }
     
     public function Eliminar(){
         $this->model->Eliminar($_REQUEST['id']);
-        header('Location: index.php');
+        header('Location: index.php?c=Usuario');
     }
+   
 }
