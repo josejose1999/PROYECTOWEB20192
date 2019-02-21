@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 require_once 'model/database.php';
 
 $controller = 'alumno';
@@ -22,7 +22,8 @@ else
     $controller = ucwords($controller) . 'Controller';
     $controller = new $controller;
     //HolaJose
-    
+
+	//HOLLA LISE    
     // Llama la accion
     call_user_func( array( $controller, $accion ) );
 }
