@@ -18,13 +18,11 @@
                   <h4>Usuario</h4>
                   <!-- <div class="divider-border"></div> -->
                   <!-- <p>Contamos con una gran variedad de armazones</p> -->
-                  <a class="btn btn-default" href="c=Usuario">Ir al crud</a>
+                  <a class="btn btn-default" href="?c=Usuario">Ir al crud</a>
                 </div>
               </div>  
-
             </div>
           </div>
-
         <div class="col-xs-12 col-sm-4 col-md-4 ajustate">
           
                         <div class="work_item  centrar">
