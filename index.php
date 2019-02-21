@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
@@ -27,7 +27,7 @@
     <body class="animate" data-spy="scroll" data-target="#scrollspy" data-offset="1">
  <!--BARRA DE NAVEGACIONCABEZA DE ZAPO-->  
 
-
+<!--BUFON VALE VRGA-->  
 
  <?php
    ini_set('display_errors','off');
