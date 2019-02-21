@@ -114,6 +114,7 @@
                         </li>
                         <li><a href="?c=Nosotros">Nosotros</a></li>
                         <li><a href="?c=Servicios">Servicios</a></li>
+                         <li><a href="?c=Administrar">Administrar</a></li>
                         <li><a href="?c=Carrito"  style="width:auto;">Carrito de compras</a></li>
                        <li><a href="#" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</a></li>
                         <li> <?php echo "<div class='alert alert-success' role='alert'><strong>Bienvenido</strong> $row[Name]"; ?> </li>

@@ -38,5 +38,11 @@ if(!isset($_REQUEST['c']))
     $controller = new $controller;
     $controller->IndexMarcas();  
     }
+    else if ($_REQUEST['c']=='Administrar') {
+    require_once "controller/$controller.controller.php";
+    $controller = ucwords($controller) . 'Controller';
+    $controller = new $controller;
+    $controller->IndexAdministrar();  
+    }
 }
 

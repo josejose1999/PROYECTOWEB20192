@@ -42,4 +42,11 @@ class InicioController{
         require_once 'view/footer.php';
         
     }
+     public function IndexAdministrar(){
+
+        require_once 'view/header.php';
+        require_once 'view/Administrador/administrador.php';
+        require_once 'view/footer.php';
+        
+    }
 }
