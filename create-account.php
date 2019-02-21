@@ -56,7 +56,7 @@
 
 	if (mysqli_query($conn, $query)) {
 		echo "<div class='alert alert-success' role='alert'><h3>Tu cuenta a sido creada.</h3>
-		<a class='btn btn-outline-primary' href='index.html' role='button'>Ir al inicio</a></div>";		
+		<a class='btn btn-outline-primary' href='index.php' role='button'>Ir al inicio</a></div>";		
 		} else {
 			echo "Error: " . $query . "<br>" . mysqli_error($conn);
 		}	
