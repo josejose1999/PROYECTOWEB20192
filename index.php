@@ -1,7 +1,7 @@
 <?php
 require_once 'model/database.php';
 
-$controller = 'alumno';
+$controller = 'Inicio';
 
 // Todo esta lógica hara el papel de un FrontController
 if(!isset($_REQUEST['c']))
