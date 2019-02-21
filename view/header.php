@@ -9,13 +9,8 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title>Optica MG</title>
     
-        <link rel="stylesheet" href="assets/css/Footer-with-button-logo.css">
-        <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
         
         <link rel="stylesheet" href="css/efecto_imagen.css">
-
-
-
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -27,9 +22,10 @@
         <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
         
         <link rel="stylesheet" href="assets/css/Footer-with-button-logo.css">
-
+       <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
         <script src="js/main.js"></script>
+       <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
 
     </head>
     <body class="animate" data-spy="scroll" data-target="#scrollspy" data-offset="1">
