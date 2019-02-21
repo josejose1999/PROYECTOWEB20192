@@ -5,46 +5,41 @@ class InicioController{
         require_once 'view/header.php';
         require_once 'view/inicio/inicio.php';
         require_once 'view/footer.php';
-        //sapo
+        
     }
       public function IndexNosotros(){
 
         require_once 'view/header.php';
-        echo "<h1>Aqui Va nosotros</h1>";
-       // require_once 'view/inicio/inicio.php';
+        require_once 'view/Nosotros/nosotros.php';
         require_once 'view/footer.php';
-        //sapo
+        
     }
         public function IndexServicios(){
 
         require_once 'view/header.php';
-        echo "<h1>Aqui Va Servicios</h1>";
-       // require_once 'view/inicio/inicio.php';
+        require_once 'view/Servicios/servicios.php';
         require_once 'view/footer.php';
-        //sapo
+        
     }
     public function IndexCarrito(){
 
         require_once 'view/header.php';
-        echo "<h1>Aqui va Carrito</h1>";
-       // require_once 'view/inicio/inicio.php';
+        require_once 'view/Carrito/carrito.php';
         require_once 'view/footer.php';
-        //sapo
+        
     }
     public function IndexArmazones(){
 
         require_once 'view/header.php';
-        echo "<h1>Aqui va Armazones</h1>";
-       // require_once 'view/inicio/inicio.php';
+        require_once 'view/Armazones/armazones.php';
         require_once 'view/footer.php';
-        //sapo
+        
     }
      public function IndexMarcas(){
 
         require_once 'view/header.php';
-        echo "<h1>Aqui va Marcas</h1>";
-       // require_once 'view/inicio/inicio.php';
+        require_once 'view/Marcas/marcas.php';
         require_once 'view/footer.php';
-        //sapo
+        
     }
 }
