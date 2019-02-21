@@ -16,6 +16,16 @@ if(!isset($_REQUEST['c']))
     $controller = ucwords($controller) . 'Controller';
     $controller = new $controller;
     $controller->IndexNosotros();  
+    } else if ($_REQUEST['c']=='Servicios') {
+    require_once "controller/$controller.controller.php";
+    $controller = ucwords($controller) . 'Controller';
+    $controller = new $controller;
+    $controller->IndexServicios();  
+    }else if ($_REQUEST['c']=='Carrito') {
+    require_once "controller/$controller.controller.php";
+    $controller = ucwords($controller) . 'Controller';
+    $controller = new $controller;
+    $controller->IndexCarrito();  
     }
 }
 
