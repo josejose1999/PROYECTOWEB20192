@@ -97,7 +97,6 @@
                             <ul class="dropdown-menu">
                                 <li><a href="#beneficios">Beneficios de Uso</a></li>
                                 <li><a href="#caracteristicas">Caracteristicas</a></li>
-
                                 <!-- <li><a href="servicios.html">Subcripciones</a></li> -->
                             </ul>
                         </li>
@@ -109,10 +108,9 @@
                                 <li><a href="marcas.html">Marcas</a></li>
                             </ul>
                         </li>
-                        <li><a href="nosotros.html" >Nosotros</a></li>
-                        <li><a href="servicios.html">Servicios</a></li>
-
-                        <li><a href="./carrito/productos.php"  style="width:auto;">Carrito de compras</a></li>
+                        <li><a href="?c=Nosotros">Nosotros</a></li>
+                        <li><a href="?c=Servicios">Servicios</a></li>
+                        <li><a href="?c=Carrito"  style="width:auto;">Carrito de compras</a></li>
                        <li><a href="#" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</a></li>
                        
                         
@@ -122,7 +120,6 @@
                         <div class="navbar-toggle"><?php if($row[Name]!=""){ ?></div>
                          <li><?php session_destroy(); ?><a href="index.php" >cerrar sesion</a></li>
                          <div><?php }?></div>
-
                          <div class="navbar-toggle"><?php if($row[Name]=="administrador"){ ?></div>
                          <li><a href="administrar.php" >ADMINISTRACION</a></li>
                          <div><?php }?></div>

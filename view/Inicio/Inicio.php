@@ -14,7 +14,6 @@
                             <img src="img/img1.jpg" alt=""  class="img-responsive">
                             <div class="carousel-caption">
                                 <h3 id="titulo_principal">Tu Estilo</h3>
-                            <!--    <p class="hidden-xs">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate distinctio maiores ipsa</p> -->
                             </div>      
                         </div>
 
@@ -22,7 +21,7 @@
                             <img src="img/img2.jpg" alt="" class="img-responsive">
                             <div class="carousel-caption">
                                 <h3 id="titulo_principal">Nuevos Diseños</h3>
-                            <!--    <p class="hidden-xs">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate distinctio maiores ipsa</p> -->
+    
                             </div>      
                         </div>
 

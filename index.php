@@ -9,18 +9,13 @@ if(!isset($_REQUEST['c']))
     $controller = ucwords($controller) . 'Controller';
     $controller = new $controller;
     $controller->Index();    
-}
-else
+}else 
 {
-    // Obtenemos el controlador que queremos cargar
-    $controller = strtolower($_REQUEST['c']);
-    $accion = isset($_REQUEST['a']) ? $_REQUEST['a'] : 'Index';
-    
-    // Instanciamos el controlador
+    if ($_REQUEST['c']=='Nosotros') {
     require_once "controller/$controller.controller.php";
     $controller = ucwords($controller) . 'Controller';
     $controller = new $controller;
-    
-    // Llama la accion
-    call_user_func( array( $controller, $accion ) );
+    $controller->IndexNosotros();  
+    }
 }
+
