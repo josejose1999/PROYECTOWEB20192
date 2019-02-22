@@ -42,8 +42,13 @@ class UsuarioController{
         $usua->id > 0
             ? $this->model->Actualizar($usua)
             : $this->model->Registrar($usua);
+        if(isset($_SESSION['aceptado'])){
+            header('Location: index.php?c=Usuario');
+        }
+        else{
+            header('Location: index.php');
+        }
         
-        header('Location: index.php?c=Usuario');
     }
     
     public function Eliminar(){
