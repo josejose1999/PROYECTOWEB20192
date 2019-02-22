@@ -5,7 +5,7 @@
     <a class="btn btn-primary" href="?c=Usuario&a=Crud" ">Nuevo Usuario</a>
 </div>
 
-<div style="border-style: solid;">
+<div >
     <table id="tabla1">
         <thead>
             <tr>
