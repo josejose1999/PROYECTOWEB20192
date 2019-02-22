@@ -32,9 +32,11 @@ class UsuarioController{
         
         $usua->id = $_REQUEST['id'];
         $usua->Nombre = $_REQUEST['Nombre'];
+        $usua->username = $_REQUEST['username'];
+        $usua->password = md5($_REQUEST['password']);
         $usua->Apellido = $_REQUEST['Apellido'];
         $usua->Correo = $_REQUEST['Correo'];
-        $usua->Sexo = $_REQUEST['Sexo'];
+        $usua->id_tipo = $_REQUEST['id_tipo'];
         $usua->FechaNacimiento = $_REQUEST['FechaNacimiento'];
 
         $usua->id > 0

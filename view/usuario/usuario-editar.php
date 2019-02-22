@@ -15,6 +15,16 @@
         <label>Nombre</label>
         <input type="text" name="Nombre" value="<?php echo $usua->Nombre; ?>" class="form-control" placeholder="Ingrese su nombre" data-validacion-tipo="requerido|min:3" />
     </div>
+
+    <div class="form-group">
+        <label>username</label>
+        <input type="text" name="username" value="<?php echo $usua->username; ?>" class="form-control" placeholder="Ingrese su nombre" data-validacion-tipo="requerido|min:3" />
+    </div>
+
+    <div class="form-group">
+        <label>password</label>
+        <input type="password" name="password" value="<?php echo $usua->password; ?>" class="form-control" placeholder="Ingrese su nombre" data-validacion-tipo="requerido|min:3" />
+    </div>
     
     <div class="form-group">
         <label>Apellido</label>
@@ -27,12 +37,23 @@
     </div>
     
     <div class="form-group">
-        <label>Sexo</label>
-        <select name="Sexo" class="form-control">
-            <option <?php echo $usua->Sexo == 1 ? 'selected' : ''; ?> value="1">Masculino</option>
-            <option <?php echo $usua->Sexo == 2 ? 'selected' : ''; ?> value="2">Femenino</option>
+        <label>Tipo de Usuario</label>
+        <select name="id_tipo" class="form-control">
+            <option <?php echo $usua->id_tipo == 1 ? 'selected' : ''; ?> value="1">Usuario</option>
+            
+            <div class="navbar-toggle"><?php if(isset($_SESSION['aceptado'])){ ?></div>
+            <option 
+            <?php echo $usua->id_tipo == 2 ? 'selected' : ''; ?> value="2">Administrador
+            </option>
+            <div><?php }?></div>
+
         </select>
+
     </div>
+
+
+
+    
     
     <div class="form-group">
         <label>Fecha de nacimiento</label>

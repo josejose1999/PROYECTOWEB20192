@@ -9,9 +9,11 @@
     <thead>
         <tr>
             <th>Nombre</th>
+            <th>username</th>
+            <th>password</th>
             <th>Apellido</th>
             <th>Correo</th>
-            <th>Sexo</th>
+            <th>Tipo de Usuario</th>
             <th>Nacimiento</th>
             <th></th>
             <th></th>
@@ -21,9 +23,11 @@
     <?php foreach($this->model->Listar() as $r): ?>
         <tr>
             <td><?php echo $r->Nombre; ?></td>
+            <td><?php echo $r->username; ?></td>
+            <td><?php echo $r->password; ?></td>
             <td><?php echo $r->Apellido; ?></td>
             <td><?php echo $r->Correo; ?></td>
-            <td><?php echo $r->Sexo == 1 ? 'Hombre' : 'Mujer'; ?></td>
+            <td><?php echo $r->id_tipo == 2 ? 'Administrador' : 'Usuario'; ?></td>
             <td><?php echo $r->FechaNacimiento; ?></td>
             <td>
                 <a href="?c=Usuario&a=Crud&id=<?php echo $r->id; ?>">Editar</a>

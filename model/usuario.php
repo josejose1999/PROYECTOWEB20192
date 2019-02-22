@@ -4,8 +4,10 @@ class Usuario
 	private $pdo;
     public $id;
     public $Nombre;
+    public $username;
+    public $password;
     public $Apellido;
-    public $Sexo;
+    public $id_tipo;
     public $FechaRegistro;
     public $FechaNacimiento;
     public $Foto;
@@ -75,10 +77,12 @@ class Usuario
 		try 
 		{
 			$sql = "UPDATE usuarios SET 
-						Nombre          = ?, 
+						Nombre          = ?,
+						username          = ?,
+						password          = ?, 
 						Apellido        = ?,
                         Correo        = ?,
-						Sexo            = ?, 
+						id_tipo            = ?, 
 						FechaNacimiento = ?
 				    WHERE id = ?";
 
@@ -86,9 +90,11 @@ class Usuario
 			     ->execute(
 				    array(
                         $data->Nombre,
+                        $data->username,
+                        $data->password,
                         $data->Apellido,
                         $data->Correo,
-                        $data->Sexo,
+                        $data->id_tipo,
                         $data->FechaNacimiento,
                         $data->id
 					)
@@ -103,16 +109,18 @@ class Usuario
 	{
 		try 
 		{
-		$sql = "INSERT INTO usuarios (Nombre,Correo,Apellido,Sexo,FechaNacimiento,FechaRegistro) 
-		        VALUES (?, ?, ?, ?, ?, ?)";
+		$sql = "INSERT INTO usuarios (Nombre,username,password,Apellido,Correo,id_tipo,FechaNacimiento,FechaRegistro) 
+		        VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
 
 		$this->pdo->prepare($sql)
 		     ->execute(
 				array(
                     $data->Nombre,
-                    $data->Correo, 
-                    $data->Apellido, 
-                    $data->Sexo,
+                    $data->username,
+                    $data->password,
+                    $data->Apellido,
+                    $data->Correo,
+                    $data->id_tipo,
                     $data->FechaNacimiento,
                     date('Y-m-d')
                 )
