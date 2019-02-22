@@ -7,7 +7,7 @@ class DB{
     private $charset;
     public function __construct(){
         $this->host     = 'localhost';
-        $this->db       = 'compras';
+        $this->db       = 'user';
         $this->user     = 'root';
         $this->password = '';
         $this->charset  = 'utf8mb4';
