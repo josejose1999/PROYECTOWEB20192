@@ -7,7 +7,7 @@ $user = new User();
 if(isset($_SESSION['user'])){
     //echo "hay sesion";
     $user->setUser($userSession->getCurrentUser());
-    include_once 'view/login/home.php';
+    //include_once 'view/login/home.php';
 }else if(isset($_POST['username']) && isset($_POST['password'])){
     
     $userForm = $_POST['username'];
@@ -19,14 +19,14 @@ if(isset($_SESSION['user'])){
         $userSession->setCurrentUser($userForm);
         $user->setUser($userForm);
         $_SESSION['aceptado']="ok";
-        include_once 'view/login/home.php';
+        //include_once 'view/login/home.php';
     }
     else if($user->userExists($userForm, $passForm,1)){
         //echo "Existe el usuario";
         $userSession->setCurrentUser($userForm);
         $user->setUser($userForm);
 
-        include_once 'view/login/home.php';
+        //include_once 'view/login/home.php';
     }
     else{
         //echo "No existe el usuario";

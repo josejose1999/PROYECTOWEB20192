@@ -1,4 +1,4 @@
-<!--IMAGEN DE PORTADA-->    
+<!--IMAGEN DE PORTADA--> 
 <div class="caja">  
 <div class="carousel"role="listbox">
               <img src="img/lentes.jpg" alt="" class="img-responsive">
@@ -7,9 +7,10 @@
                 <p class="hidden-xs hidden-sm hidden-md"></p>
               </div>
 </div>
-</div>
+</div>   
 <!--LOGO DE LA PAGINA-->   
 <h3 class="acomodar container-fluid"><img src="img/gafas.png" alt=""> Accesorios</h3>
+
 <!--LISTAS DE NAVEGACION-->  
 <div class="caja">         
 <div>
@@ -30,6 +31,7 @@
           </ul>
 </div>
 </div>
+
 <!--TABLA CONTENEDORA-->
 <div class=""> 
 <div class="tab-content">
@@ -468,13 +470,8 @@
             </div>
     </div>
 
-                  <!--Hasta aqui lentes deportivos-->
 
-    <hr>
-
-</div>
-</div>
-<!--MENU DE IMAGENES-->
+    <!--MENU DE IMAGENES-->
 
 
 
@@ -553,10 +550,6 @@
 </section>
 <br>
 <br>
-
-
-
-
 
 <!--comprar-->
 
@@ -665,7 +658,3 @@
 
 
 
-      <!--SCRIPT-->
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
-        <script src="js/vendor/bootstrap.min.js"></script>
-        <script src="js/main.js"></script>

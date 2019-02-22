@@ -11,9 +11,20 @@
     <div id="menu" style="color: green; text-align: center;">
         
         <br><br><br><hr>
-        <h3 style="font-family: cursive">Bienvenido <?php echo $user->getNombre();  ?> <?php if(isset($_SESSION['user'])){ ?>
-        <samp style="font-size: 10px;"><a href="controller/logout.php" >cerrar sesion</a></samp>
-        <?php }?> </h3>
+        <?php if(isset($_SESSION['user'])){ ?>
+    <div class="btn-group">
+        <button type="button" class="btn btn-susses">Informacion</button>
+        <button type="button" class="btn btn-susses dropdown-toggle"
+          data-toggle="dropdown">
+        <span class="caret"></span>
+        <span class="sr-only">Desplegar menú</span>
+        </button>
+      <ul class="dropdown-menu" role="menu">
+            <li><a href="#"><?php echo $user->getNombre();?></a></li>
+            <li><a href="controller/logout.php">Cerrar sesion</a></li>
+      </ul>
+    </div>
+    <?php }?>
         <hr><br>
     </div>    
 </body>

@@ -114,6 +114,28 @@
                                 <li><a href="?c=Marcas">Marcas</a></li>
                             </ul>
                         </li>
+
+                        <?php if(isset($_SESSION['user'])){ ?>
+                        <div class="btn-group" style="margin-top: 11px;">
+                           
+                            <button type="button" class=" btn-link  dropdown-toggle"
+                              data-toggle="dropdown">
+                            <span class="caret"></span>
+                            <span class="sr-only">Desplegar menú</span>
+                            </button>
+                          <ul class="dropdown-menu" role="menu">
+                                <?php include_once 'controller/user.php';?>
+                                <?php include_once 'controller/user_session.php';
+                                $userSession = new UserSession();
+                                $user = new User();
+                                $user->setUser($userSession->getCurrentUser());
+                                ?>
+                                <li><a href="#"><?php echo $user->getNombre();?></a></li>
+                                <li><a href="controller/logout.php">Cerrar sesion</a></li>
+                          </ul>
+                        </div>
+                        <?php }?>
+
                         <li><a href="?c=Nosotros">Nosotros</a></li>
                         
                         <li><a href="?c=Servicios">Servicios</a></li>
@@ -123,9 +145,13 @@
                         <li><a href="?c=Administrar" >Administrar</a></li>
                         <div><?php }?></div>
 
+
+
                         <div class="navbar-toggle"><?php if(!isset($_SESSION['user'])){ ?></div>
                         <li><a href="#" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</a></li>
                         <div><?php }?></div> 
+
+
 
                         
       
