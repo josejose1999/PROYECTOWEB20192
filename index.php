@@ -83,13 +83,19 @@ if(!isset($_REQUEST['c']))
     $controller->IndexMarcas();  
     }
     else if ($_REQUEST['c']=='Administrar') {
+           if(isset($_SESSION['aceptado']))
+{
     require_once "controller/$controller.controller.php";
     $controller = ucwords($controller) . 'Controller';
     $controller = new $controller;
     $controller->IndexAdministrar();  
-    }else if(($_REQUEST['c'])=='Usuario')
+    }
+    else{
+        echo"<a href='index.php'><h1>NO TIENES ACCESO A ESTA SECCION</h1></a>";
+    }
+}else if(($_REQUEST['c'])=='Usuario')
 
-if(!isset($_REQUEST['c']))
+if(!isset($_REQUEST['c']) and isset($_SESSION['aceptado']))
 {
 
     require_once "controller/$controller2.controller.php";
@@ -99,6 +105,8 @@ if(!isset($_REQUEST['c']))
 }
 
 else{
+    if(isset($_SESSION['aceptado']))
+{
     // Obtenemos el controlador que queremos cargar
     $controller2 = strtolower($_REQUEST['c']);
     $accion = isset($_REQUEST['a']) ? $_REQUEST['a'] : 'Index';
@@ -110,6 +118,10 @@ else{
     
     // Llama la accion
     call_user_func( array( $controller2, $accion ) );
+}
+else{
+    echo"<a href='index.php'><h1>NO TIENES ACCESO A ESTA SECCION</h1></a>";
+}
 }
 }
 
