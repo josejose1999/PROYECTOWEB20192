@@ -1,8 +1,8 @@
 <!--SLIDER-->
 <div class="caja">
-        <div id="carousel-1" class="carousel slide " action="check-login.php" data-ride="carousel">
+        <div id="carousel-1" class="carousel slide " action="check-login.php" data-ride="carousel" >
                     <!--Indicadores-->
-                    <ol class="carousel-indicators">
+                    <ol class="carousel-indicators" style="z-index: auto;">
                         <li data-target="#carousel-1" data-slide-to="0" class="active"></li>
                         <li data-target="#carousel-1" data-slide-to="1"></li>
                         <li data-target="#carousel-1" data-slide-to="2"></li>
@@ -72,13 +72,12 @@
       </label>
     </div>
      <span class="psw" style="margin-top: -10%">Ha olvidado la <a href="#">contraseña?</a></span>
-       <br><br>
+
   </form>
         </div>
 
 <!--CUERPO-->   
-<div class="">
-<br>    
+<div class=""> 
         <section class="app-seccion2" id="beneficios">
             <div class="container">
                 <div class="row">

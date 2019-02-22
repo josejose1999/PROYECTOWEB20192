@@ -94,6 +94,8 @@
 
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right app-nav">
+
+
                         <li><a href="index.php" >Inicio</a></li>
                          <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Secciones
@@ -113,22 +115,54 @@
                             </ul>
                         </li>
                         <li><a href="?c=Nosotros">Nosotros</a></li>
-                        <li><a href="?c=Servicios">Servicios</a></li>
-                         <li><a href="?c=Administrar">Administrar</a></li>
-                        <li><a href="?c=Carrito"  style="width:auto;">Carrito de compras</a></li>
-                       <li><a href="#" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</a></li>
-                        <li> <?php echo "<div class='alert alert-success' role='alert'><strong>Bienvenido</strong> $row[Name]"; ?> </li>
-                         <li> </li>
-                        <div class="navbar-toggle"><?php if($row[Name]!=""){ ?></div>
-                         <li><?php session_destroy(); ?><a href="index.php" >cerrar sesion</a></li>
-                         <div><?php }?></div>
-                         <div class="navbar-toggle"><?php if($row[Name]=="administrador"){ ?></div>
-                         <li><a href="administrar.php" >ADMINISTRACION</a></li>
-                         <div><?php }?></div>
                         
+                        <li><a href="?c=Servicios">Servicios</a></li>
+                        <li><a href="?c=Carrito"  style="width:auto;">Carrito de compras</a></li>
+
+                        <div class="navbar-toggle"><?php if(isset($_SESSION['aceptado'])){ ?></div>
+                        <li><a href="?c=Administrar" >Administrar</a></li>
+                        <div><?php }?></div>
+
+                        <div class="navbar-toggle"><?php if(!isset($_SESSION['user'])){ ?></div>
+                        <li><a href="#" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</a></li>
+                        <div><?php }?></div> 
+
+                        
+      
                     </ul>
                 </div>
             </div>
-        </nav>   
-        <br>
-        <br>   
+        </nav>  
+
+<div id="id01" class="modal">
+  
+
+<form action="" method="POST">
+        <?php
+            if(isset($errorLogin)){
+                echo $errorLogin;
+            }
+        ?>
+        <div class="" style="border-style: solid; background: white; padding: 20px; margin-top: 90px; z-index: 4 !important;">
+        <h2>Iniciar sesión</h2>
+        <p>Nombre de usuario: <br>
+        <input type="text" name="username"></p>
+        <p>Password: <br>
+        <input type="password" name="password"></p>
+        <input type="submit" class="btn btn-success" value="Iniciar Sesión">
+        </div>
+    </form>
+
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>  
