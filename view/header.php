@@ -135,8 +135,7 @@
         </nav>  
 
 <div id="id01" class="modal">
-  
-
+    <div>
 <form action="" method="POST">
         <?php
             if(isset($errorLogin)){
@@ -150,11 +149,13 @@
         <p>Password: <br>
         <input type="password" name="password"></p>
         <input type="submit" class="btn btn-success" value="Iniciar Sesión">
+        <a href="?c=Usuario&a=Crud">Registrarse</a>
         </div>
+        
     </form>
-
+    </div>
+    
 </div>
-
 <script>
 // Get the modal
 var modal = document.getElementById('id01');
