@@ -1,3 +1,4 @@
+<br><br>
 <div class="container">
 <h1 class="page-header">
     <?php echo $usua->id != null ? $usua->Nombre : 'Nuevo Registro'; ?>
