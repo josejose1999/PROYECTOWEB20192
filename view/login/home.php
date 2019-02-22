@@ -12,7 +12,7 @@
         
         <br><br><br><hr>
         <h3 style="font-family: cursive">Bienvenido <?php echo $user->getNombre();  ?> <?php if(isset($_SESSION['user'])){ ?>
-        <samp style="font-size: 10px;"><a href="includes/logout.php" >cerrar sesion</a></samp>
+        <samp style="font-size: 10px;"><a href="controller/logout.php" >cerrar sesion</a></samp>
         <?php }?> </h3>
         <hr><br>
     </div>    
