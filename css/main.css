@@ -60,6 +60,10 @@ button:hover {
   background-color: #f44336;
 }
 
+.center{
+  text-align:center;
+}
+
 /* Center the image and position the close button */
 .imgcontainer {
 	margin-top: 0;

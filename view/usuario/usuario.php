@@ -24,6 +24,7 @@
         <tbody>
         <?php foreach($this->model->Listar() as $r): ?>
             <tr>
+
                 <td><?php echo $r->Nombre; ?></td>
                 <td><?php echo $r->username; ?></td>
                 <td><?php echo "**********"; ?></td> <!--$r->username;-->
@@ -31,6 +32,7 @@
                 <td><?php echo $r->Correo; ?></td>
                 <td><?php echo $r->id_tipo == 2 ? 'Administrador' : 'Usuario'; ?></td>
                 <td><?php echo $r->FechaNacimiento; ?></td>
+               
                 <td>
                     <a href="?c=Usuario&a=Crud&id=<?php echo $r->id; ?>">Editar</a>
                 </td>

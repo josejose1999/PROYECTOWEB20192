@@ -31,6 +31,7 @@ class UsuarioController{
         $usua = new Usuario();
         
         $usua->id = $_REQUEST['id'];
+
         if($_REQUEST['Nombre']!="" and ($_REQUEST['password'])!="" and $_REQUEST['Apellido']!="" and $_REQUEST['Correo']!="" and $_REQUEST['id_tipo']!="" and $_REQUEST['FechaNacimiento']!=""){
            $usua->Nombre = $_REQUEST['Nombre']; 
            $usua->username = $_REQUEST['username'];
@@ -47,7 +48,14 @@ class UsuarioController{
        }
 
         
-        
+
+        $usua->Nombre = $_REQUEST['Nombre'];
+        $usua->username = $_REQUEST['username'];
+        $usua->password = md5($_REQUEST['password']);
+        $usua->Apellido = $_REQUEST['Apellido'];
+        $usua->Correo = $_REQUEST['Correo'];
+        $usua->id_tipo = $_REQUEST['id_tipo'];
+        $usua->FechaNacimiento = $_REQUEST['FechaNacimiento'];
 
         $usua->id > 0
             ? $this->model->Actualizar($usua)
