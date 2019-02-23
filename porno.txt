@@ -1,0 +1,15 @@
+    <br><br><br>    
+    <?php if(isset($_SESSION['user'])){ ?>
+    <div class="btn-group">
+        <button type="button" class="btn btn-danger">Informacion</button>
+        <button type="button" class="btn btn-danger dropdown-toggle"
+          data-toggle="dropdown">
+        <span class="caret"></span>
+        <span class="sr-only">Desplegar menú</span>
+        </button>
+      <ul class="dropdown-menu" role="menu">
+            <li><a href="#"><?php echo $user->getNombre();?></a></li>
+            <li><a href="controller/logout.php">Cerrar sesion</a></li>
+      </ul>
+    </div>
+    <?php }?>
