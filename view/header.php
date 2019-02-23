@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
@@ -8,7 +9,14 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title>Optica MG</title>
-    
+        
+
+        <!--lo dl carrito-->
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <!--hasta aqui-->
         
         <link rel="stylesheet" href="css/efecto_imagen.css">
         <meta name="description" content="">
@@ -28,7 +36,7 @@
        <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
 
     </head>
-    <body class="animate" data-spy="scroll" data-target="#scrollspy" data-offset="1">
+    <body  data-spy="scroll" data-target="#scrollspy" data-offset="1">
  <!--BARRA DE NAVEGACIONCABEZA DE ZAPO-->
 
 <!--BUFON VALE VRGA-->
@@ -102,7 +110,8 @@
                                 <span class="caret"></span></a>
                             <ul class="dropdown-menu">
                                 <li><a href="#beneficios">Beneficios de Uso</a></li>
-                                <li><a href="#caracteristicas">Caracteristicas</a></li>
+                                <li><a href="#generalidad">Caracteristicas</a></li>
+                                <li><a href="#caracteristicas">Tienda Online</a></li>
                                 <!-- <li><a href="servicios.html">Subcripciones</a></li> -->
                             </ul>
                         </li>
@@ -110,7 +119,7 @@
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Productos
                                 <span class="caret"></span></a>
                             <ul class="dropdown-menu">
-                                <li><a href="?c=Armazones">Armazones y Gafas</a></li>
+                                <li><a href="?c=Armazones">Reportes de ventas</a></li>
                                 <li><a href="?c=Marcas">Marcas</a></li>
                             </ul>
                         </li>
@@ -168,12 +177,12 @@
                 echo $errorLogin;
             }
         ?>
-        <div class="" style="border-style: solid; background: white; padding: 20px; margin-top: 90px; z-index: 4 !important;">
-        <h2>Iniciar sesión</h2>
-        <p>Nombre de usuario: <br>
-        <input type="text" name="username"></p>
+        <div class="" style=" background: white; padding: 20px;margin: 0 auto; margin-top: 100px;  width: 50%; ">
+        <h2 style="text-align: center;">Iniciar sesión</h2>
+        <p>Nombre de usuario:<br>
+        <input type="text" name="username" required></p>
         <p>Password: <br>
-        <input type="password" name="password"></p>
+        <input type="password" name="password" required></p>
         <input type="submit" class="btn btn-success" value="Iniciar Sesión">
         <a href="?c=Usuario&a=Crud">Registrarse</a>
         </div>

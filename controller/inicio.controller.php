@@ -4,6 +4,7 @@ class InicioController{
     public function Index(){
         require_once 'view/header.php';
         require_once 'view/inicio/inicio.php';
+        require_once 'view/inicio/index.php';
         require_once 'view/footer.php';
         
     }
@@ -32,8 +33,7 @@ class InicioController{
 
         require_once 'view/header.php';
         require_once 'view/Armazones/armazones.php';
-        require_once 'view/footer.php';
-        
+        require_once 'view/footer.php';        
     }
      public function IndexMarcas(){
 

@@ -118,7 +118,7 @@
             </div> 
         </section>
 
-        <section class="app-seccion3" id="caracteristicas">
+        <section class="app-seccion3" >
             <div class="container">
                 <div class="row">
 
@@ -157,7 +157,7 @@
             </div>
         </section>
 
-        <section class="app-seccion2" >
+        <section class="app-seccion2" id="generalidad">
             <div class="container">
                 <div class="app-contenedor">
                     <h2 class="app titulo3">Craracteristicas del producto</h2>

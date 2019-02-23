@@ -10,31 +10,31 @@
 </ol>
 
 <form id="frm-usuario" action="?c=Usuario&a=Guardar" method="post" enctype="multipart/form-data">
-    <input type="hidden" name="id" value="<?php echo $usua->id; ?>" />
+    <input type="hidden" name="id" value="<?php echo $usua->id; ?>" required />
     
     <div class="form-group">
         <label>Nombre</label>
-        <input type="text" name="Nombre" value="<?php echo $usua->Nombre; ?>" class="form-control" placeholder="Ingrese su nombre" data-validacion-tipo="requerido|min:3" />
+        <input type="text" name="Nombre" value="<?php echo $usua->Nombre; ?>" class="form-control" placeholder="Ingrese su nombre" data-validacion-tipo="requerido|min:3" required/>
     </div>
 
     <div class="form-group">
         <label>username</label>
-        <input type="text" name="username" value="<?php echo $usua->username; ?>" class="form-control" placeholder="Ingrese su nombre" data-validacion-tipo="requerido|min:3" />
+        <input type="text" name="username" value="<?php echo $usua->username; ?>" class="form-control" placeholder="Ingrese su nombre" data-validacion-tipo="requerido|min:3" required/>
     </div>
 
     <div class="form-group">
         <label>password</label>
-        <input type="password" name="password" value="<?php echo $usua->password; ?>" class="form-control" placeholder="Ingrese su nombre" data-validacion-tipo="requerido|min:3" />
+        <input type="password" name="password" value="<?php echo $usua->password; ?>" class="form-control" placeholder="Ingrese su nombre" data-validacion-tipo="requerido|min:3" required />
     </div>
     
     <div class="form-group">
         <label>Apellido</label>
-        <input type="text" name="Apellido" value="<?php echo $usua->Apellido; ?>" class="form-control" placeholder="Ingrese su apellido" data-validacion-tipo="requerido|min:10" />
+        <input type="text" name="Apellido" value="<?php echo $usua->Apellido; ?>" class="form-control" placeholder="Ingrese su apellido" data-validacion-tipo="requerido|min:10" required />
     </div>
     
     <div class="form-group">
         <label>Correo</label>
-        <input type="text" name="Correo" value="<?php echo $usua->Correo; ?>" class="form-control" placeholder="Ingrese su correo electrónico" data-validacion-tipo="requerido|email" />
+        <input type="email" name="Correo" value="<?php echo $usua->Correo; ?>" class="form-control" placeholder="Ingrese su correo electrónico" data-validacion-tipo="requerido|email" required />
     </div>
     
     <div class="form-group">
@@ -51,14 +51,10 @@
         </select>
 
     </div>
-
-
-
-    
-    
+     
     <div class="form-group">
         <label>Fecha de nacimiento</label>
-        <input  type="date" name="FechaNacimiento" value="<?php echo $usua->FechaNacimiento; ?>" class="form-control datepicker" placeholder="Ingrese su fecha de nacimiento" data-validacion-tipo="requerido" />
+        <input  type="date" name="FechaNacimiento" value="<?php echo $usua->FechaNacimiento; ?>" class="form-control datepicker" placeholder="Ingrese su fecha de nacimiento" data-validacion-tipo="requerido" required="text-right" />
     </div>
     
     <hr />

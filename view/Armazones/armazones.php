@@ -1,3 +1,8 @@
+<?php
+  //require_once 'view/header.php';
+  //require_once 'view/footer.php';
+?>
+
 <!--IMAGEN DE PORTADA--> 
 <div class="caja">  
 <div class="carousel"role="listbox">
@@ -33,445 +38,48 @@
 </div>
 
 <!--TABLA CONTENEDORA-->
-<div class=""> 
-<div class="tab-content">
-
-    <div class="tab-pane active" id="sol">
-    <br>
-              <div class="container-fluid">
-              <div class="row">
-
-              <div class="col-md-9 col-sm-10 col-xs-12 contenido-scrollspy" data-spy="scroll" data-target="#menu" dta-offset="0"  >
-                  
-              
-                  <div class="col-xs-12 col-sm-6 " id="pb1">
-                    <div class="thumbnail">
-                      <img src="img/lente1.jpg" alt="">
-                      <div class="caption">
-                        <h3>R7 - Elegant Style TWO</h3>
-                        <p class="hidden-xs">Diseño rectangular con estilo sobrio y elegante en diferentes estampados para combinar.
-                        Su hermoso diseño lo convierte en un accesorio funcional para cualquier ocasión.</p>
-                        <button class="btn btn-primary hidden-lg hidden-md hidden-sm" data-container="body" data-toggle="popover" data-placement="right" data-content="Diseño rectangular con estilo sobrio y elegante en diferentes estampados para combinar.Su hermoso diseño lo convierte en un accesorio funcional para cualquier ocasión."title="R7 - Elegant Style TWO">Info</button>
-                        <button class="btn btn-info href="javascript:void(0)" data-toggle="modal" data-target="#id32">Me Gusta</button>
-                        <button class="btn btn-primary href="javascript:void(0)" data-toggle="modal" data-target="#id33">Comprar</button>
-                         
-
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-xs-12 col-sm-6">
-                    <div class="thumbnail">
-                      <img src="img/lente2.jpg" alt="">
-                      <div class="caption">
-                        <h3>A14 - light sky</h3>
-                        <p class="hidden-xs">Hermoso armazón con forma redondeada diseñado en mitad pasta y mitad metal.
-                        Cuenta con un estilo moderno que se convirtieron en un estándar de la moda. Su hermoso diseño lo convierte en un accesorio funcional para cualquier ocasión.</p>
-                        <button class="btn btn-primary hidden-lg hidden-md hidden-sm" data-container="body" data-toggle="popover" data-placement="right" data-content="Hermoso armazón con forma redondeada diseñado en mitad pasta y mitad metal.
-                        Cuenta con un estilo moderno que se convirtieron en un estándar de la moda. Su hermoso diseño lo convierte en un accesorio funcional para cualquier ocasión."title="A14 - light sky">Info</button>
-                        <button class="btn btn-info href="javascript:void(0)" data-toggle="modal" data-target="#id32">Me Gusta</button>
-                        <button class="btn btn-primary href="javascript:void(0)" data-toggle="modal" data-target="#id33">Comprar</button>
-
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-xs-12 col-sm-6">
-                    <div class="thumbnail">
-                      <img src="img/lente3.jpg" alt="">
-                      <div class="caption">
-                        <h3>A9 - Casual Sport</h3>
-                        <p class="hidden-xs">Diseño clásico muy versátil en forma rectangular reconocido desde hace muchos años, que no pasa de moda a pesar del tiempo.</p>
-                        <button class="btn btn-primary hidden-lg hidden-md hidden-sm" data-container="body" data-toggle="popover" data-placement="right" data-content="Diseño clásico muy versátil en forma rectangular reconocido desde hace muchos años, que no pasa de moda a pesar del tiempo."title="A9 - Casual Sport">Info</button>
-                        <button class="btn btn-info href="javascript:void(0)" data-toggle="modal" data-target="#id32">Me Gusta</button>
-                        <button class="btn btn-primary href="javascript:void(0)" data-toggle="modal" data-target="#id33">Comprar</button>
-
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-xs-12 col-sm-6">
-                    <div class="thumbnail">
-                      <img src="img/lente4.jpg" alt="">
-                      <div class="caption">
-                        <h3>A2 - Cranberry Chic</h3>
-                        <p class="hidden-xs">Diseñado en forma cuadrada con detalles típicos de las últimas tendencias usadas en monturas a la moda. Además de combinar materiales entre pasta y metal cuenta con un método antirresbalante al final de cada varilla para la comodidad de quien las usa.</p>
-                        <button class="btn btn-primary hidden-lg hidden-md hidden-sm" data-container="body" data-toggle="popover" data-placement="right" data-content="Diseñado en forma cuadrada con detalles típicos de las últimas tendencias usadas en monturas a la moda. Además de combinar materiales entre pasta y metal cuenta con un método antirresbalante al final de cada varilla para la comodidad de quien las usa."title="A2 - Cranberry Chic">Info</button>
-                        <button class="btn btn-info href="javascript:void(0)" data-toggle="modal" data-target="#id32">Me Gusta</button>
-                        <button class="btn btn-primary href="javascript:void(0)" data-toggle="modal" data-target="#id33">Comprar</button>
-
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-xs-12 col-sm-6">
-                    <div class="thumbnail">
-                      <img src="img/lente5.jpg" alt="">
-                      <div class="caption">
-                        <h3>G1 - Red and Blue</h3>
-                        <p class="hidden-xs">Gafas de sol con lunas de diferentes colores a elegir. Cuenta con unas varillas de diseño especial de dos colores: rojo y azul, que le añade realce.</p>
-                        <button class="btn btn-primary hidden-lg hidden-md hidden-sm" data-container="body" data-toggle="popover" data-placement="right" data-content="Gafas de sol con lunas de diferentes colores a elegir. Cuenta con unas varillas de diseño especial de dos colores: rojo y azul, que le añade realce."title="G1 - Red and Blue">Info</button>
-                        <button class="btn btn-info href="javascript:void(0)" data-toggle="modal" data-target="#id32">Me Gusta</button>
-                        <button class="btn btn-primary href="javascript:void(0)" data-toggle="modal" data-target="#id33">Comprar</button>
-
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-xs-12 col-sm-6">
-                    <div class="thumbnail">
-                      <img src="img/lente6.jpg" alt="">
-                      <div class="caption">
-                        <h3>G10 - Moon Chick</h3>
-                        <p class="hidden-xs">Diseñado en forma redonda, sigue las últimas tendencias en armazones. Juega con una combinación de materiales entre pasta y metal uniendo el color negro y el dorado, brindando un estilo fashion a quien lo use.</p>
-                        <button class="btn btn-primary hidden-lg hidden-md hidden-sm" data-container="body" data-toggle="popover" data-placement="right" data-content="Diseñado en forma redonda, sigue las últimas tendencias en armazones. Juega con una combinación de materiales entre pasta y metal uniendo el color negro y el dorado, brindando un estilo fashion a quien lo use."title="G10 - Moon Chick">Info</button>
-                        <button class="btn btn-info href="javascript:void(0)" data-toggle="modal" data-target="#id32">Me Gusta</button>
-                        <button class="btn btn-primary href="javascript:void(0)" data-toggle="modal" data-target="#id33">Comprar</button>
-
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-xs-12 col-sm-6" id="pb7">
-                    <div class="thumbnail">
-                      <img src="img/lente7.jpg" alt="">
-                      <div class="caption">
-                        <h3>A12 - Vintage Metal</h3>
-                        <p class="hidden-xs">Diseño redondo y metálico con un estilo vintage de los años 90.
-                        Actualmente muy solicitado, que se ha convertido en un estándar de la moda.</p>
-                        <button class="btn btn-primary hidden-lg hidden-md hidden-sm" data-container="body" data-toggle="popover" data-placement="right" data-content="Diseño redondo y metálico con un estilo vintage de los años 90.
-                        Actualmente muy solicitado, que se ha convertido en un estándar de la moda."title="A12 - Vintage Metal">Info</button>
-                        <button class="btn btn-info href="javascript:void(0)" data-toggle="modal" data-target="#id32">Me Gusta</button>
-                        <button class="btn btn-primary href="javascript:void(0)" data-toggle="modal" data-target="#id33">Comprar</button>
-
-                      </div>
-                    </div>
-                  </div>
+<h3>Order Details</h3>
+      
+        <table class="table table-bordered">
+          <tr>
+            <th width="40%">Item Name</th>
+            <th width="10%">Quantity</th>
+            <th width="20%">Price</th>
+            <th width="15%">Total</th>
+            <th width="5%">Action</th>
+          </tr>
+          <?php
+          if(!empty($_SESSION["shopping_cart"]))
+          {
+            $total = 0;
+            foreach($_SESSION["shopping_cart"] as $keys => $values)
+            {
+          ?>
+          <tr>
+            <td><?php echo $values["item_name"]; ?></td>
+            <td><?php echo $values["item_quantity"]; ?></td>
+            <td>$ <?php echo $values["item_price"]; ?></td>
+            <td>$ <?php echo number_format($values["item_quantity"] * $values["item_price"], 2);?></td>
+            <td><a href="index.php?action=delete&id=<?php echo $values["item_id"]; ?>"><span class="text-danger">Remove</span></a></td>
+          </tr>
+          <?php
+              $total = $total + ($values["item_quantity"] * $values["item_price"]);
+            }
+          ?>
+          <tr>
+            <td colspan="3" align="right">Total</td>
+            <td align="right">$ <?php echo number_format($total, 2); ?></td>
+            <td></td>
+          </tr>
+          <?php
+          }
+          ?>
             
-              </div>
-
-               <div class="col-md-3 col-sm-2 col-xs-4" id="menu">
-
-                <ul class="nav nav-pills nav-stacked">
-                  <li><a href="#pb1" class="hidden-xs">R7 - Elegant Style TWO</a></li>
-                  <li><a href="#pb7" class="hidden-xs">A12 - Vintage Metal</a></li>
-                </ul>
-
-                <div class="panel panel-default hidden-xs hidden-sm hidden-md">
-                    <div class="panel-heading">
-                      Caracteristicas
-                    </div>
-                    <div class="panel-body">
-                      La potencia de una lente es una cualidad que está influenciada por el índice de refracción del material empleado y por la curvatura de la superficie de separación. En lo que respecta a una lente, son dos las superficies que alteran la trayectoria de los rayos, la de la cara anterior y la de la cara posterior.
-                    </div>
-                </div>
-
-                <div class="panel panel-danger hidden-xs hidden-sm hidden-md">
-                    <div class="panel-heading">
-                      Facilidades de Pago
-                    </div>
-                    <div class="panel-body">
-                      Ofresemos facilidad de pago, aceptando tarifas mesuales y semanales con tasas de interes minimas para mayor comodidad.
-                    </div>
-                </div>
-
-               </div>
-
-            </div>
-            </div>
-
-    </div>
-    <div class="tab-pane " id="lectura">
-      <br>
-              <div class="container-fluid">
-              <div class="row">
-
-              <div class="col-md-9 col-sm-10 col-xs-12 contenido-scrollspy" data-spy="scroll" data-target="#menu" dta-offset="0">
-                  
-              
-                  <div class="col-xs-12 col-sm-6 ">
-                    <div class="thumbnail">
-                      <img src="img/lectura1.jpg" alt="">
-                      <div class="caption">
-                        <h3>G10 - Moon Chick</h3>
-                        <p class="hidden-xs">Un lente atrevido y diferente, con una forma geométrica triangular está diseñado tanto para damas como caballeros que deseen darle un toque vintage a su estilo.</p>
-                        <button class="btn btn-primary hidden-lg hidden-md hidden-sm" data-container="body" data-toggle="popover" data-placement="right" data-content="Un lente atrevido y diferente, con una forma geométrica triangular está diseñado tanto para damas como caballeros que deseen darle un toque vintage a su estilo."title="G10 - Moon Chick">Info</button>
-                        <button class="btn btn-info href="javascript:void(0)" data-toggle="modal" data-target="#id32">Me Gusta</button>
-                        <button class="btn btn-primary href="javascript:void(0)" data-toggle="modal" data-target="#id33">Comprar</button>
-                         
-
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-xs-12 col-sm-6" id="pb8">
-                    <div class="thumbnail">
-                      <img src="img/lectura2.jpg" alt="">
-                      <div class="caption">
-                        <h3>G11 - Sun Chick</h3>
-                        <p class="hidden-xs">Unas Gafas llenas de brillo que te hace deslumbrar, si deseas lucir radiante y chic. Son de forma redonda muy modernas y solicitadas actualmente.</p>
-                        <button class="btn btn-primary hidden-lg hidden-md hidden-sm" data-container="body" data-toggle="popover" data-placement="right" data-content="Unas Gafas llenas de brillo que te hace deslumbrar, si deseas lucir radiante y chic. Son de forma redonda muy modernas y solicitadas actualmente."title="G11 - Sun Chick">Info</button>
-                        <button class="btn btn-info href="javascript:void(0)" data-toggle="modal" data-target="#id32">Me Gusta</button>
-                        <button class="btn btn-primary href="javascript:void(0)" data-toggle="modal" data-target="#id33">Comprar</button>
-
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-xs-12 col-sm-6">
-                    <div class="thumbnail">
-                      <img src="img/lectura3.jpg" alt="">
-                      <div class="caption">
-                        <h3>G5 - Sun square</h3>
-                        <p class="hidden-xs">Hermosas gafas unisex de pasta con detalle dorado en el centro que las diferencia, con un estilo sobrio pero casual que lo convierte en un accesorio funcional para cualquier ocasión.</p>
-                        <button class="btn btn-primary hidden-lg hidden-md hidden-sm" data-container="body" data-toggle="popover" data-placement="right" data-content="Hermosas gafas unisex de pasta con detalle dorado en el centro que las diferencia, con un estilo sobrio pero casual que lo convierte en un accesorio funcional para cualquier ocasión."title="G5 - Sun square">Info</button>
-                        <button class="btn btn-info href="javascript:void(0)" data-toggle="modal" data-target="#id32">Me Gusta</button>
-                        <button class="btn btn-primary href="javascript:void(0)" data-toggle="modal" data-target="#id33">Comprar</button>
-
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-xs-12 col-sm-6">
-                    <div class="thumbnail">
-                      <img src="img/lectura4.jpg" alt="">
-                      <div class="caption">
-                        <h3>G9 - Star Chic</h3>
-                        <p class="hidden-xs">Gafas super chic, de estilo espejado y armazón metálico dorado, con una forma súper moderna y a la moda, muy solicitada actualmente por las chicas.</p>
-                        <button class="btn btn-primary hidden-lg hidden-md hidden-sm" data-container="body" data-toggle="popover" data-placement="right" data-content="Gafas super chic, de estilo espejado y armazón metálico dorado, con una forma súper moderna y a la moda, muy solicitada actualmente por las chicas."title="G9 - Star Chic">Info</button>
-                        <button class="btn btn-info href="javascript:void(0)" data-toggle="modal" data-target="#id32">Me Gusta</button>
-                        <button class="btn btn-primary href="javascript:void(0)" data-toggle="modal" data-target="#id33">Comprar</button>
-
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-xs-12 col-sm-6">
-                    <div class="thumbnail">
-                      <img src="img/lectura5.jpg" alt="">
-                      <div class="caption">
-                        <h3>G7 - Fru Fru</h3>
-                        <p class="hidden-xs">Hermosas gafas con un estilo elegante y chic para mujeres con estilo. Es un accesorio funcional para cualquier ocasión.</p>
-                        <button class="btn btn-primary hidden-lg hidden-md hidden-sm" data-container="body" data-toggle="popover" data-placement="right" data-content="Hermosas gafas con un estilo elegante y chic para mujeres con estilo. Es un accesorio funcional para cualquier ocasión."title="G7 - Fru Fru">Info</button>
-                        <button class="btn btn-info href="javascript:void(0)" data-toggle="modal" data-target="#id32">Me Gusta</button>
-                        <button class="btn btn-primary href="javascript:void(0)" data-toggle="modal" data-target="#id33">Comprar</button>
-
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-xs-12 col-sm-6" id="pb2">
-                    <div class="thumbnail">
-                      <img src="img/lectura6.jpg" alt="">
-                      <div class="caption">
-                        <h3>G2 - Serious and Modern</h3>
-                        <p class="hidden-xs">Cuentan con un diseño súper moderno y serio para caballero, con lunas espejadas. Su innovador estilo lo convierte en un accesorio funcional para cualquier ocasión.</p>
-                        <button class="btn btn-primary hidden-lg hidden-md hidden-sm" data-container="body" data-toggle="popover" data-placement="right" data-content="Cuentan con un diseño súper moderno y serio para caballero, con lunas espejadas. Su innovador estilo lo convierte en un accesorio funcional para cualquier ocasión."title="G2 - Serious and Modern">Info</button>
-                        <button class="btn btn-info href="javascript:void(0)" data-toggle="modal" data-target="#id32">Me Gusta</button>
-                        <button class="btn btn-primary href="javascript:void(0)" data-toggle="modal" data-target="#id33">Comprar</button>
-
-                      </div>
-                    </div>
-                  </div>            
-            
-              </div>
-
-               <div class="col-md-3 col-sm-2 col-xs-4" id="menu">
-
-                <ul class="nav nav-pills nav-stacked">
-                  <li class="active"><a href="#pb2" class="hidden-xs">G2 - Serious and Modern</a></li>
-                  <li><a href="#pb8" class="hidden-xs">G11 - Sun Chick</a></li>
-                </ul>
-
-                <div class="panel panel-default hidden-xs hidden-sm hidden-md">
-                    <div class="panel-heading">
-                      Caracteristicas
-                    </div>
-                    <div class="panel-body">
-                      Las gafas de lectura de montura completa son adecuadas para las personas que pasan mucho tiempo concentradas en ver de cerca algún material. Estas gafas proporcionan un mayor campo de visión para la lectura, pero si intenta mirar hacia arriba o si mira a algún otro lado de la habitación, todo se verá borroso.
-                    </div>
-                </div>
-
-                <div class="panel panel-danger hidden-xs hidden-sm hidden-md">
-                    <div class="panel-heading">
-                      Facilidades de Pago
-                    </div>
-                    <div class="panel-body">
-                      Ofresemos facilidad de pago, aceptando tarifas mesuales y semanales con tasas de interes minimas para mayor comodidad.
-                    </div>
-                </div>
-
-               </div>
-
-            </div>
-            </div>
-    </div>
-    <div class="tab-pane " id="contacto">
-      <br>
-              <div class="container-fluid">
-              <div class="row">
-
-              <div class="col-md-9 col-sm-10 col-xs-12 contenido-scrollspy" data-spy="scroll" data-target="#menu" dta-offset="0">
-                             
-                  <div class="col-xs-12 col-sm-6" id="len1">
-                    <div class="thumbnail">
-                      <img src="img/lentescontacto2.png" alt="">
-                      <div class="caption">
-                        <h3>Lentes de Contacto Híbridos</h3>
-                        <p class="hidden-xs">Los lentes de contacto híbridos están diseñados para proporcionar un uso cómodo que compite con los lentes blandos o de hidrogel de silicona, en combinación con la visión excepcionalmente transparente de los lentes permeables a los gases. Los lentes híbridos tienen una zona central rígida permeable a los gases, rodeada por una "falda" de material de hidrogel o de hidrogel de silicona. </p>
-                        <button class="btn btn-primary hidden-lg hidden-md hidden-sm" data-container="body" data-toggle="popover" data-placement="right" data-content="Los lentes de contacto híbridos están diseñados para proporcionar un uso cómodo que compite con los lentes blandos o de hidrogel de silicona, en combinación con la visión excepcionalmente transparente de los lentes permeables a los gases. Los lentes híbridos tienen una zona central rígida permeable a los gases, rodeada por una "falda" de material de hidrogel o de hidrogel de silicona." title="Lentes de Contacto Híbridos">Info</button>
-                        <button class="btn btn-info href="javascript:void(0)" data-toggle="modal" data-target="#id32">Me Gusta</button>
-                        <button class="btn btn-primary href="javascript:void(0)" data-toggle="modal" data-target="#id33">Comprar</button>
-
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-xs-12 col-sm-6">
-                    <div class="thumbnail">
-                      <img src="img/lentescontacto.jpg" alt="">
-                      <div class="caption">
-                        <h3>Lentes Blandos</h3>
-                        <p class="hidden-xs">Los lentes blandos están fabricados de plásticos tipo gel con contenido de agua, llamado hidrogel. Estos lentes son muy delgados y maleables y se amoldan a la superficie anterior del ojo.</p>
-                        <button class="btn btn-primary hidden-lg hidden-md hidden-sm" data-container="body" data-toggle="popover" data-placement="right" data-content="Los lentes blandos están fabricados de plásticos tipo gel con contenido de agua, llamado hidrogel. Estos lentes son muy delgados y maleables y se amoldan a la superficie anterior del ojo."title="Lentes Blandos">Info</button>
-                        <button class="btn btn-info href="javascript:void(0)" data-toggle="modal" data-target="#id32">Me Gusta</button>
-                        <button class="btn btn-primary href="javascript:void(0)" data-toggle="modal" data-target="#id33">Comprar</button>
-
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-xs-12 col-sm-6" id="len2">
-                    <div class="thumbnail">
-                      <img src="img/lentescontacto1.jpg" alt="" id="original1">
-                      <div class="caption">
-                        <h3>Lentes de Hidrogel de Silicona</h3>
-                        <p class="hidden-xs">Los lentes de hidrogel de silicona son un tipo avanzado de lentes de contacto blandos que son más porosos que los lentes de hidrogel comunes y permiten que aún más oxígeno llegue a la córnea. Se introdujeron al mercado en 2002, y actualmente son los más populares prescritos en Estados Unidos.</p>
-                        <button class="btn btn-primary hidden-lg hidden-md hidden-sm" data-container="body" data-toggle="popover" data-placement="right" data-content="Los lentes de hidrogel de silicona son un tipo avanzado de lentes de contacto blandos que son más porosos que los lentes de hidrogel comunes y permiten que aún más oxígeno llegue a la córnea. Se introdujeron al mercado en 2002, y actualmente son los más populares prescritos en Estados Unidos."title="Lentes de Hidrogel de Silicona">Info</button>
-                        <button class="btn btn-info href="javascript:void(0)" data-toggle="modal" data-target="#id32">Me Gusta</button>
-                        <button class="btn btn-primary href="javascript:void(0)" data-toggle="modal" data-target="#id33">Comprar</button>
-
-                      </div>
-                    </div>
-                  </div>           
-              </div>
-
-               <div class="col-md-3 col-sm-2 col-xs-4" id="menu">
-
-                <ul class="nav nav-pills nav-stacked">
-                  <li class="active"><a href="#len1" class="hidden-xs">Lentes de Contacto Híbridos</a></li>
-                  <li><a href="#len2" class="hidden-xs">Lentes de Hidrogel de Silicona</a></li>
-                </ul>
-
-                <div class="panel panel-default hidden-xs hidden-sm hidden-md">
-                    <div class="panel-heading">
-                      Caracteristicas
-                    </div>
-                    <div class="panel-body">
-                      El tipo más común de lentes de contacto es el lente de contacto rígido permeable al gas (RGP, por sus siglas en inglés). En general, estos lentes están hechos de plástico combinado con otros materiales. Conservan su forma firmemente, pero permiten el flujo de oxígeno entre el lente y el ojo.
-                    </div>
-                </div>
-
-                <div class="panel panel-danger hidden-xs hidden-sm hidden-md">
-                    <div class="panel-heading">
-                      Facilidades de Pago
-                    </div>
-                    <div class="panel-body">
-                      Ofresemos facilidad de pago, aceptando tarifas mesuales y semanales con tasas de interes minimas para mayor comodidad.
-                    </div>
-                </div>
-
-               </div>
-
-            </div>
-            </div>
-    </div>
-     <div class="tab-pane " id="deportivos">
-      <br>
-              <div class="container-fluid">
-              <div class="row">
-
-              <div class="col-md-9 col-sm-10 col-xs-12 contenido-scrollspy" data-spy="scroll" data-target="#menu" dta-offset="0">
-                  
-              
-                  <div class="col-xs-12 col-sm-6 ">
-                    <div class="thumbnail">
-                      <img src="img/deportivo1.jpg" alt="">
-                      <div class="caption">
-                        <h3>Nike Flip EV 0990 077</h3>
-                        <p class="hidden-xs">Unas gafas de sol revolucionarias para aquellos corredores que dan siempre el 110 %. Estas gafas de sol favorecen la total concentración de los corredores en su rendimiento atlético.</p><button class="btn btn-primary hidden-lg hidden-md hidden-sm" data-container="body" data-toggle="popover" data-placement="right" data-content="Unas gafas de sol revolucionarias para aquellos corredores que dan siempre el 110 %. Estas gafas de sol favorecen la total concentración de los corredores en su rendimiento atlético."title="Nike Flip EV 0990 077">Info</button>
-                        <button class="btn btn-info href="javascript:void(0)" data-toggle="modal" data-target="#id32">Me Gusta</button>
-                        <button class="btn btn-primary href="javascript:void(0)" data-toggle="modal" data-target="#id33">Comprar</button>
-                         
-
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-xs-12 col-sm-6" id="pb8">
-                    <div class="thumbnail">
-                      <img src="img/deportivos2.jpg" alt="">
-                      <div class="caption">
-                        <h3>Nike Rabid EV 0603 001</h3>
-                        <p class="hidden-xs">Se desarrolla constantemente nuevos modelos para ayudar a los atletas a superarse, sin importar el entorno del deporte ni las condiciones de luz.</p>
-                        <button class="btn btn-primary hidden-lg hidden-md hidden-sm" data-container="body" data-toggle="popover" data-placement="right" data-content="Se desarrolla constantemente nuevos modelos para ayudar a los atletas a superarse, sin importar el entorno del deporte ni las condiciones de luz."title="Nike Rabid EV 0603 001">Info</button>
-                        <button class="btn btn-info href="javascript:void(0)" data-toggle="modal" data-target="#id32">Me Gusta</button>
-                        <button class="btn btn-primary href="javascript:void(0)" data-toggle="modal" data-target="#id33">Comprar</button>
-
-                      </div>
-                    </div>
-                  </div>
+        </table>
+   
 
 
-                  <div class="col-xs-12 col-sm-6" id="pb8">
-                    <div class="thumbnail">
-                      <img src="img/deportivo3.jpg" alt="">
-                      <div class="caption">
-                        <h3>Nike Skylon Ace XV EV </h3>
-                        <p class="hidden-xs">Con estas gafas los corredores se olvidaran de sus gafas mientras corren. Con la claridad de las lentes, su ligereza y comodidad se consiguen unas gafas que se ajustan a la perfección al rostro del usuario.</p>
-                        <button class="btn btn-primary hidden-lg hidden-md hidden-sm" data-container="body" data-toggle="popover" data-placement="right" data-content="Con estas gafas los corredores se olvidaran de sus gafas mientras corren. Con la claridad de las lentes, su ligereza y comodidad se consiguen unas gafas que se ajustan a la perfección al rostro del usuario."title="Nike Skylon Ace XV EV ">Info</button>
-                        <button class="btn btn-info href="javascript:void(0)" data-toggle="modal" data-target="#id32">Me Gusta</button>
-                        <button class="btn btn-primary href="javascript:void(0)" data-toggle="modal" data-target="#id33">Comprar</button>
-
-                      </div>
-                    </div>
-                  </div>
-                 </div>
-
-
-               <div class="col-md-3 col-sm-2 col-xs-4" id="menu">
-
-                <ul class="nav nav-pills nav-stacked">
-                  <li class="active"><a href="#len1" class="hidden-xs">Nike Flip EV 0990 077</a></li>
-                  <li><a href="#len2" class="hidden-xs">Nike Skylon Ace XV EV</a></li>
-                </ul>
-
-                <div class="panel panel-default hidden-xs hidden-sm hidden-md">
-                    <div class="panel-heading">
-                      Caracteristicas
-                    </div>
-                    <div class="panel-body">
-                      Para llevar unas buenas gafas deportivas que te ofrezcan la máxima protección contra el sol y te protejan los ojos, a la vez que se adaptan perfectamente a tu cara y cuentan con un agarre total para que no se muevan mientras montas en bicicleta o realizas carrera a pie. Existen muchos modelos hoy en día en el mercado que cumplen perfectamente con estas características básicas y asi poder tener complemento básico en su equipamiento deportivo.
-                    </div>
-                </div>
-
-                <div class="panel panel-danger hidden-xs hidden-sm hidden-md">
-                    <div class="panel-heading">
-                      Facilidades de Pago
-                    </div>
-                    <div class="panel-body">
-                      Ofresemos facilidad de pago, aceptando tarifas mesuales y semanales con tasas de interes minimas para mayor comodidad.
-                    </div>
-                </div>
-
-               </div>
-
-            </div>
-            </div>
-    </div>
-
-
-    <!--MENU DE IMAGENES-->
+<!--MENU DE IMAGENES-->
 
 
 
