@@ -50,9 +50,9 @@
 
         </select>
 
+      
+
     </div>
-
-
 
     
     
@@ -60,6 +60,9 @@
         <label>Fecha de nacimiento</label>
         <input  type="date" name="FechaNacimiento" value="<?php echo $usua->FechaNacimiento; ?>" class="form-control datepicker" placeholder="Ingrese su fecha de nacimiento" data-validacion-tipo="requerido" />
     </div>
+
+
+     
     
     <hr />
     

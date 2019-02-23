@@ -10,7 +10,7 @@ class Usuario
     public $id_tipo;
     public $FechaRegistro;
     public $FechaNacimiento;
-    public $Foto;
+    public $image;
     public $Correo;
 
 	public function __CONSTRUCT()
@@ -107,6 +107,8 @@ class Usuario
 
 	public function Registrar(Usuario $data)
 	{
+		
+
 		try 
 		{
 		$sql = "INSERT INTO usuarios (Nombre,username,password,Apellido,Correo,id_tipo,FechaNacimiento,FechaRegistro) 
@@ -122,6 +124,7 @@ class Usuario
                     $data->Correo,
                     $data->id_tipo,
                     $data->FechaNacimiento,
+             
                     date('Y-m-d')
                 )
 			);
@@ -129,5 +132,17 @@ class Usuario
 		{
 			die($e->getMessage());
 		}
+	}
+}
+
+function upload_image()
+{
+	if(isset($_FILES["user_image"]))
+	{
+		$extension = explode('.', $_FILES['user_image']['name']);
+		$new_name = rand() . '.' . $extension[1];
+		$destination = './upload/' . $new_name;
+		move_uploaded_file($_FILES['user_image']['tmp_name'], $destination);
+		return $new_name;
 	}
 }

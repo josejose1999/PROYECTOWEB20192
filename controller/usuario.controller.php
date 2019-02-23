@@ -38,6 +38,7 @@ class UsuarioController{
         $usua->Correo = $_REQUEST['Correo'];
         $usua->id_tipo = $_REQUEST['id_tipo'];
         $usua->FechaNacimiento = $_REQUEST['FechaNacimiento'];
+      
 
         $usua->id > 0
             ? $this->model->Actualizar($usua)

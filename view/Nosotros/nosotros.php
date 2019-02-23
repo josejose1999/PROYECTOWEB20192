@@ -8,7 +8,7 @@
         <img src="img/banner-nosotros.jpg" alt="Nosotros" class="img-responsive">
     <div>
 <!--Intro-->
-    <div class="container-fluid">
+     <div class="container">
         <section class="row auto">
         <div class="col-sm-12 center">
             <h1>Optica MG</h1>
@@ -92,3 +92,5 @@
             </div>
         </div>
     </div>
+    <br><br>
+</div>
