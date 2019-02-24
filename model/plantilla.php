@@ -10,7 +10,7 @@
 			$this->SetFont('Arial','B',25);
 
 			$this->Cell(30);
-			$this->Cell(120,10, 'Reporte De Usuarios',0,0,'C');
+			$this->Cell(120,10, 'Reporte',0,0,'C');
 			$this->Ln(20);
 		}
 		

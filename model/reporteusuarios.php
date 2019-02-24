@@ -1,4 +1,5 @@
 <?php
+
 	include 'plantilla.php';
 	require 'conexion.php';
 	
@@ -9,6 +10,7 @@
 	$resultado = $mysqli->query($query);
 	
 	$pdf = new PDF();
+	$pdf->Cell(120,10, 'Reporte De Usuarios',0,0,'C');
 	$pdf->AliasNbPages();
 	$pdf->AddPage();
 	
