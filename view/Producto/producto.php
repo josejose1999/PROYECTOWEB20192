@@ -12,6 +12,8 @@
             <th>Nombre</th>
             <th>Imagen</th>
             <th>Precio</th>
+            <th>Editar</th>
+            <th>Eliminar</th>
         </tr>
     </thead>
     <tbody>
