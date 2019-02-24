@@ -22,7 +22,7 @@
         <tr>
             <td>
                 <?php if($r->__GET('Foto') != ''): ?>
-                    <img src="uploads/<?php echo $r->__GET('Foto'); ?>" style="width:100%;" />
+                    <img src="img/<?php echo $r->__GET('Foto'); ?>" style="width:100%;" />
                 <?php endif; ?> 
             </td>
             <td><?php echo $r->__GET('Nombre'); ?></td>
