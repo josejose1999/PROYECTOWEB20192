@@ -140,7 +140,7 @@
                         <li><a href="?c=Nosotros">Nosotros</a></li>
                         
                         <li><a href="?c=Servicios">Servicios</a></li>
-                        <li><a href="?c=Carrito"  style="width:auto;">Carrito de compras</a></li>
+                        
 
                         <div class="navbar-toggle"><?php if(isset($_SESSION['aceptado'])){ ?></div>
                         <li><a href="?c=Administrar" >Administrar</a></li>
