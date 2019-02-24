@@ -5,9 +5,9 @@
          
         </div>
         <div class="row">
-        <div class="col-xs-12 col-sm-4 col-md-4 ajustate ">
-          
-                        <div class="work_item  centrar">
+
+          <div class="col-xs-12 col-sm-4 col-md-4 ajustate ">
+            <div class="work_item  centrar">
 
               <div class="work_thumb ">
                 <img src="img/avatar.png" alt="project1" class="img-responsive">
@@ -23,9 +23,9 @@
               </div>  
             </div>
           </div>
-        <div class="col-xs-12 col-sm-4 col-md-4 ajustate">
-          
-                        <div class="work_item  centrar">
+
+          <div class="col-xs-12 col-sm-4 col-md-4 ajustate">
+            <div class="work_item  centrar">
 
               <div class="work_thumb  ">
                 <img src="img/gafasadmin.png" alt="project1" class="img-responsive">
@@ -44,8 +44,7 @@
           </div>
 
           <div class="col-xs-12 col-sm-4 col-md-4 ajustate ">
-          
-                        <div class="work_item  centrar">
+            <div class="work_item  centrar">
 
               <div class="work_thumb  ">
                 <img src="img/cita.png" alt="project1" class="img-responsive">
@@ -62,9 +61,28 @@
 
             </div>
           </div>
-            <div class="col-xs-12 col-sm-4 col-md-4 ajustate ">
-          
-                        <div class="work_item  centrar">
+
+          <div class="col-xs-12 col-sm-4 col-md-4 ajustate ">
+            <div class="work_item  centrar">
+
+              <div class="work_thumb  ">
+                <img src="img/cita.png" alt="project1" class="img-responsive">
+              </div>
+
+              <div class="work_hover_mask  ">
+                <div class="mask-container text-center" style="width:100%;">
+                  <h4>Facturas</h4>
+                  <!-- <div class="divider-border"></div> -->
+                  <!-- <p>Contamos con una gran variedad de armazones</p> -->
+                  <a class="btn btn-default" href="?c=Factura">Ir al crud</a>
+                </div>
+              </div>  
+
+            </div>
+          </div>
+
+          <div class="col-xs-12 col-sm-4 col-md-4 ajustate ">
+            <div class="work_item  centrar">
 
               <div class="work_thumb  ">
                 <img src="img/pdf1.png" alt="project1" class="img-responsive">
@@ -81,9 +99,9 @@
 
             </div>
           </div>
+
           <div class="col-xs-12 col-sm-4 col-md-4 ajustate ">
-          
-                        <div class="work_item  centrar">
+            <div class="work_item  centrar">
 
               <div class="work_thumb  ">
                 <img src="img/pdf1.png" alt="project1" class="img-responsive">
@@ -100,9 +118,9 @@
 
             </div>
           </div>
-               <div class="col-xs-12 col-sm-4 col-md-4 ajustate ">
-          
-                        <div class="work_item  centrar">
+
+          <div class="col-xs-12 col-sm-4 col-md-4 ajustate ">
+            <div class="work_item  centrar">
 
               <div class="work_thumb  ">
                 <img src="img/pdf1.png" alt="project1" class="img-responsive">
