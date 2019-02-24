@@ -93,10 +93,15 @@ if(!isset($_REQUEST['c']))
     $controller->IndexAdministrar();  
     }
     else{
-        echo"<a href='index.php'><h1>NO TIENES ACCESO A ESTA SECCION</h1></a>";
+        echo"<a href='index.php'><h3>NO TIENES ACCESO A ESTA SECCION</h3></a>";
     }
-}
-else if(($_REQUEST['c'])=='Usuario')
+}else if(($_REQUEST['c'])=='Usuario')
+
+
+
+
+
+
 
 if(!isset($_REQUEST['c']) and isset($_SESSION['aceptado']))
 {
@@ -123,13 +128,10 @@ else{
     call_user_func( array( $controller2, $accion ) );
 }
 else{
-    //echo"<a href='index.php'><h1>NO TIENES ACCESO A ESTA SECCION</h1></a>";
+    echo"<a href='index.php'><h3>NO TIENES ACCESO A ESTA SECCION</h3></a>";
 }
 }
 }
-
-
-
 
  if(!isset($_REQUEST['c']))
 {

@@ -36,7 +36,7 @@ class UsuarioController{
             </script>';
             echo "sapo";
         }else{
-            $usua->id = $_REQUEST['id'];
+        $usua->id = $_REQUEST['id'];
         $usua->Nombre = $_REQUEST['Nombre'];
         $usua->username = $_REQUEST['username'];
         $usua->password = md5($_REQUEST['password']);
