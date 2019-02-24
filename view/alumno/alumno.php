@@ -7,7 +7,7 @@
     <a class="btn btn-primary" href="?c=Alumno&a=Crud">Nuevo Producto</a>
 </div>
 
-<table class="table table-striped">
+<table  id= "tabla4" class="table table-striped">
     <thead>
         <tr>
             <th style="width:80px;">Imagen</th>
