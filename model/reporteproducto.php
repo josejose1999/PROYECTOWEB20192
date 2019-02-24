@@ -19,9 +19,9 @@
 	
 	while($row = $resultado->fetch_assoc())
 	{
-		$pdf->Cell(61,6,utf8_decode($row['Nombre']),1,0,'C');
-		$pdf->Cell(61,6,utf8_decode($row['Imagen']),1,0,'C');
-		$pdf->Cell(61,6,utf8_decode($row['Precio']),1,1,'C');
+		$pdf->Cell(61,6,utf8_decode($row['name']),1,0,'C');
+		$pdf->Cell(61,6,utf8_decode($row['image']),1,0,'C');
+		$pdf->Cell(61,6,utf8_decode($row['price']),1,1,'C');
 	}
 	$pdf->Output();
 ?>
