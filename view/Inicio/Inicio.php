@@ -1,4 +1,4 @@
-<br><br><br><!--SLIDER-->
+<!--SLIDER-->
 <div class="caja">
         <div id="carousel-1" class="carousel slide " action="check-login.php" data-ride="carousel" >
                     <!--Indicadores-->
