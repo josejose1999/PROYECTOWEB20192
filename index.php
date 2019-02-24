@@ -46,6 +46,7 @@ if(isset($_SESSION['user'])){
 $controller = 'inicio';
 $controller2 = 'usuario';
 $controller3= 'producto';
+$controller4= 'citas';
 
 
 // Todo esta lógica hara el papel de un FrontController
@@ -55,6 +56,9 @@ if(!isset($_REQUEST['c']))
     $controller = ucwords($controller) . 'Controller';
     $controller = new $controller;
     $controller->Index();    
+
+
+
 }else 
 {
     if ($_REQUEST['c']=='Nosotros') {
@@ -95,11 +99,7 @@ if(!isset($_REQUEST['c']))
     else{
         echo"<a href='index.php'><h3>NO TIENES ACCESO A ESTA SECCION</h3></a>";
     }
-}else if(($_REQUEST['c'])=='Usuario')
-
-
-
-
+}
 
 
 
@@ -131,14 +131,14 @@ else{
     echo"<a href='index.php'><h3>NO TIENES ACCESO A ESTA SECCION</h3></a>";
 }
 }
-}
+
 
  if(!isset($_REQUEST['c']))
 {
     require_once "controller/$controller3.controller.php";
     $controller3 = ucwords($controller3) . 'Controller';
     $controller3 = new $controller3;
-    $controller3->Index3();
+    $controller3->Index();
 
 
 }
@@ -158,3 +158,29 @@ else
 }
 
 
+ if(!isset($_REQUEST['c']))
+{
+    require_once "controller/$controller4.controller.php";
+    $controller4 = ucwords($controller4) . 'Controller';
+    $controller4 = new $controller4;
+    $controller4->Index();
+
+
+}
+else
+{
+    // Obtenemos el controlador que queremos cargar
+    $controller4 = strtolower($_REQUEST['c']);
+    $accion = isset($_REQUEST['a']) ? $_REQUEST['a'] : 'Index';
+    
+    // Instanciamos el controlador
+    require_once "controller/$controller3.controller.php";
+    $controller4 = ucwords($controller4) . 'Controller';
+    $controller4 = new $controller4;
+    
+    // Llama la accion
+    call_user_func( array( $controller4, $accion ) );
+}
+
+
+}

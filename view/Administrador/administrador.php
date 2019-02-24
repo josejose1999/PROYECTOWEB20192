@@ -56,7 +56,7 @@
                   <h4>Citas</h4>
                   <!-- <div class="divider-border"></div> -->
                   <!-- <p>Contamos con una gran variedad de armazones</p> -->
-                  <a class="btn btn-default" href="#pb6">Ir al crud</a>
+                  <a class="btn btn-default" href="?c=Cita">Ir al crud</a>
                 </div>
               </div>  
 

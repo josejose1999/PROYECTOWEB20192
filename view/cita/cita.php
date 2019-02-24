@@ -1,10 +1,11 @@
+<br><br>
+<div class="container">
 <h1 class="page-header">Citas</h1>
-
 <div class="well well-sm text-right">
     <a class="btn btn-primary" href="?c=Cita&a=Crud">Nueva cita</a>
 </div>
 
-<table id="gg" class="table table-striped">
+<table id="tabla3">
     <thead>
         <tr>
             <th style="width:180px;">Fecha Tentativa</th>
@@ -38,3 +39,4 @@
     <?php endforeach; ?>
     </tbody>
 </table> 
+</div>
