@@ -1,6 +1,6 @@
 <?php 
 session_start();
-$connect = mysqli_connect("localhost", "root", "", "user");
+$connect = mysqli_connect("localhost", "root", "", "optica");
 
 if(isset($_POST["add_to_cart"]))
 {
