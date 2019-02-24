@@ -45,7 +45,7 @@ if(isset($_SESSION['user'])){
 
 $controller = 'inicio';
 $controller2 = 'usuario';
-$controller3= 'producto';
+$controller3= 'alumno';
 $controller4= 'citas';
 $controller5 = 'factura';
 

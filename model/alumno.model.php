@@ -1,5 +1,5 @@
 <?php
-class ProductoModel
+class AlumnoModel
 {
 	private $pdo;
 
@@ -22,18 +22,18 @@ class ProductoModel
 		{
 			$result = array();
 
-			$stm = $this->pdo->prepare("SELECT * FROM productos");
+			$stm = $this->pdo->prepare("SELECT * FROM producto");
 			$stm->execute();
 
 			foreach($stm->fetchAll(PDO::FETCH_OBJ) as $r)
 			{
-				$alm = new Producto();
+				$alm = new Alumno();
 
 				$alm->__SET('id', $r->id);
-				$alm->__SET('name', $r->name);
-                $alm->__SET('image', $r->image);
-                $alm->__SET('price', $r->price);
-
+				$alm->__SET('Nombre', $r->Nombre);
+                $alm->__SET('Correo', $r->Precio);
+                $alm->__SET('Foto', $r->Foto);
+	
 				$result[] = $alm;
 			}
 
@@ -50,7 +50,7 @@ class ProductoModel
 		try 
 		{
 			$stm = $this->pdo
-			           ->prepare("SELECT * FROM productos WHERE id = ?");
+			           ->prepare("SELECT * FROM producto WHERE id = ?");
 			          
 
 			$stm->execute(array($id));
@@ -66,7 +66,7 @@ class ProductoModel
 		try 
 		{
 			$stm = $this->pdo
-			          ->prepare("DELETE FROM productos WHERE id = ?");			          
+			          ->prepare("DELETE FROM producto WHERE id = ?");
 
 			$stm->execute(array($id));
 		} catch (Exception $e) 
@@ -75,22 +75,22 @@ class ProductoModel
 		}
 	}
 
-	public function Actualizar(Producto $data)
+	public function Actualizar(Alumno $data)
 	{
 		try 
 		{
-			$sql = "UPDATE productos SET 
-						name          = ?, 
-						image        = ?,
-						price           = ?, 
+			$sql = "UPDATE producto SET 
+						Nombre          = ?, 
+                        Precio          = ?,
+                        Foto            = ?
 				    WHERE id = ?";
 
 			$this->pdo->prepare($sql)
 			     ->execute(
 				array(
-					$data->__GET('name'), 
-					$data->__GET('image'), 
-                    $data->__GET('price'),
+					$data->__GET('Nombre'), 
+                    $data->__GET('Precio'),
+                    $data->__GET('Foto'),
 					$data->__GET('id')
 					)
 				);
@@ -100,19 +100,19 @@ class ProductoModel
 		}
 	}
 
-	public function Registrar(Producto $data)
+	public function Registrar(Alumno $data)
 	{
 		try 
 		{
-		$sql = "INSERT INTO productos (name,image,price) 
+		$sql = "INSERT INTO producto (Nombre,Precio,Foto) 
 		        VALUES (?, ?, ?)";
 
 		$this->pdo->prepare($sql)
 		     ->execute(
 			array(
-				$data->__GET('name'), 
-                $data->__GET('image'),
-                $data->__GET('price'),
+				$data->__GET('Nombre'), 
+                $data->__GET('Precio'),
+                $data->__GET('Foto'),
 				)
 			);
 		} catch (Exception $e) 
