@@ -19,7 +19,7 @@
     
     <div class="form-group">
         <label>Imagen del producto</label>
-        <input type="text" name="Imagen" value="<?php echo $pro->Imagen; ?>" class="form-control" placeholder="Ingrese la imagen" data-validacion-tipo="requerido|min:10" />
+        <input type="file" name="Imagen" value="<?php echo $pro->Imagen; ?>" class="form-control" placeholder="Ingrese la imagen" data-validacion-tipo="requerido|min:10" accept="image/*" />
     </div>
     
     <div class="form-group">

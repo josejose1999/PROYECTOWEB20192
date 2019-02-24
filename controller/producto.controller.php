@@ -9,7 +9,7 @@ class ProductoController{
         $this->model = new Producto();
     }
     
-    public function Index3(){
+    public function Index(){
         require_once 'view/header.php';
         require_once 'view/Producto/producto.php';
         require_once 'view/footer.php';

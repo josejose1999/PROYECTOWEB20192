@@ -146,7 +146,7 @@ else
 {
     // Obtenemos el controlador que queremos cargar
     $controller3 = strtolower($_REQUEST['c']);
-    $accion = isset($_REQUEST['a']) ? $_REQUEST['a'] : 'Index3';
+    $accion = isset($_REQUEST['a']) ? $_REQUEST['a'] : 'Index';
     
     // Instanciamos el controlador
     require_once "controller/$controller3.controller.php";
