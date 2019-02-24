@@ -1,4 +1,4 @@
-<h1 class="page-header">
+<br><h1 class="page-header">
     <?php echo $alm->id != null ? $alm->Nombre: 'Nuevo Registro'; ?>
 </h1>
 
