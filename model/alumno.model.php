@@ -22,7 +22,7 @@ class AlumnoModel
 		{
 			$result = array();
 
-			$stm = $this->pdo->prepare("SELECT * FROM alumnos");
+			$stm = $this->pdo->prepare("SELECT * FROM producto");
 			$stm->execute();
 
 			foreach($stm->fetchAll(PDO::FETCH_OBJ) as $r)
@@ -50,7 +50,7 @@ class AlumnoModel
 		try 
 		{
 			$stm = $this->pdo
-			           ->prepare("SELECT * FROM alumnos WHERE id = ?");
+			           ->prepare("SELECT * FROM producto WHERE id = ?");
 			          
 
 			$stm->execute(array($id));
@@ -66,7 +66,7 @@ class AlumnoModel
 		try 
 		{
 			$stm = $this->pdo
-			          ->prepare("DELETE FROM alumnos WHERE id = ?");			          
+			          ->prepare("DELETE FROM producto WHERE id = ?");
 
 			$stm->execute(array($id));
 		} catch (Exception $e) 
@@ -79,7 +79,7 @@ class AlumnoModel
 	{
 		try 
 		{
-			$sql = "UPDATE alumnos SET 
+			$sql = "UPDATE producto SET 
 						Nombre          = ?, 
                         Precio          = ?,
                         Foto            = ?
@@ -104,7 +104,7 @@ class AlumnoModel
 	{
 		try 
 		{
-		$sql = "INSERT INTO alumnos (Nombre,Precio,Foto) 
+		$sql = "INSERT INTO producto (Nombre,Precio,Foto) 
 		        VALUES (?, ?, ?)";
 
 		$this->pdo->prepare($sql)
