@@ -10,7 +10,7 @@
                         <div class="work_item  centrar">
 
               <div class="work_thumb ">
-                <img src="img/img5.jpg" alt="project1" class="img-responsive">
+                <img src="img/avatar.png" alt="project1" class="img-responsive">
               </div>
 
               <div class="work_hover_mask  ">
@@ -28,7 +28,7 @@
                         <div class="work_item  centrar">
 
               <div class="work_thumb  ">
-                <img src="img/img4.jpg" alt="project1" class="img-responsive">
+                <img src="img/gafasadmin.png" alt="project1" class="img-responsive">
               </div>
 
               <div class="work_hover_mask  ">
@@ -48,7 +48,7 @@
                         <div class="work_item  centrar">
 
               <div class="work_thumb  ">
-                <img src="img/img6.jpg" alt="project1" class="img-responsive">
+                <img src="img/cita.png" alt="project1" class="img-responsive">
               </div>
 
               <div class="work_hover_mask  ">
@@ -57,6 +57,25 @@
                   <!-- <div class="divider-border"></div> -->
                   <!-- <p>Contamos con una gran variedad de armazones</p> -->
                   <a class="btn btn-default" href="#pb6">Ir al crud</a>
+                </div>
+              </div>  
+
+            </div>
+          </div>
+            <div class="col-xs-12 col-sm-4 col-md-4 ajustate ">
+          
+                        <div class="work_item  centrar">
+
+              <div class="work_thumb  ">
+                <img src="img/pdf1.png" alt="project1" class="img-responsive">
+              </div>
+
+              <div class="work_hover_mask  ">
+                <div class="mask-container text-center" style="width:100%;">
+                  <h4>Usuarios Reporte</h4>
+                  <!-- <div class="divider-border"></div> -->
+                  <!-- <p>Contamos con una gran variedad de armazones</p> -->
+                  <a class="btn btn-default" href="model/reporte.php">Generar Reporte PDF</a>
                 </div>
               </div>  
 
