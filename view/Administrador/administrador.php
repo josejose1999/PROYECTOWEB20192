@@ -100,7 +100,25 @@
 
             </div>
           </div>
+               <div class="col-xs-12 col-sm-4 col-md-4 ajustate ">
+          
+                        <div class="work_item  centrar">
 
+              <div class="work_thumb  ">
+                <img src="img/pdf1.png" alt="project1" class="img-responsive">
+              </div>
+
+              <div class="work_hover_mask  ">
+                <div class="mask-container text-center" style="width:100%;">
+                  <h4>Citas Reporte</h4>
+                  <!-- <div class="divider-border"></div> -->
+                  <!-- <p>Contamos con una gran variedad de armazones</p> -->
+                  <a class="btn btn-default" href="model/reportecitas.php">Generar Reporte PDF</a>
+                </div>
+              </div>  
+
+            </div>
+          </div>
         </div>
       </div>
 </section>
