@@ -44,7 +44,7 @@ class AlumnoController{
         
         if( !empty( $_FILES['Foto']['name'] ) ){
             $foto = date('ymdhis') . '-' . strtolower($_FILES['Foto']['name']);
-            move_uploaded_file ($_FILES['Foto']['tmp_name'], 'uploads/' . $foto);
+            move_uploaded_file ($_FILES['Foto']['tmp_name'], 'img/' . $foto);
             
             $alm->__SET('Foto', $foto);
         }

@@ -35,7 +35,7 @@
         <div class="col-xs-6">
             <?php if($alm->__GET('Foto') != ''): ?>
                 <div class="img-thumbnail text-center">
-                    <img src="uploads/<?php echo $alm->__GET('Foto'); ?>" style="width:50%;" />
+                    <img src="img/<?php echo $alm->__GET('Foto'); ?>" style="width:50%;" />
                 </div>
             <?php endif; ?>            
         </div>
