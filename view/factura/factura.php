@@ -1,11 +1,12 @@
+<br><br>
+<div class="container">
 <h1 class="page-header">Facturas</h1>
 
-<div class="well well-sm text-right">
-    <input type="text" name="parametro" class="form-control" placeholder="Ingrese el numero de factura"/>
-    <a class="btn btn-primary" href="?c=factura&a=Buscar">Buscar</a>
+<div class="well well-sm text-right relleno" >
+    <!---<a class="btn btn-primary" href="?c=factura&a=Crud" ">Facturas</a>-->
 </div>
 
-<table class="table table-striped">
+<table id="tabla4" class="table table-striped">
     <thead>
         <tr>
             <th style="width:180px;">Cliente</th>

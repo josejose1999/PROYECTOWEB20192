@@ -66,7 +66,7 @@
             <div class="work_item  centrar">
 
               <div class="work_thumb  ">
-                <img src="img/cita.png" alt="project1" class="img-responsive">
+                <img src="img/factura.png" alt="project1" class="img-responsive">
               </div>
 
               <div class="work_hover_mask  ">
