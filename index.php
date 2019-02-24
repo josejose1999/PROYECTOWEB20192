@@ -1,4 +1,5 @@
 <?php
+error_reporting(0);
 require_once 'model/database.php';
 include_once 'controller/user.php';
 include_once 'controller/user_session.php';
