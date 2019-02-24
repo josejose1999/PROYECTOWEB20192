@@ -29,8 +29,14 @@ class UsuarioController{
     
     public function Guardar(){
         $usua = new Usuario();
-        
-        $usua->id = $_REQUEST['id'];
+        if ($_REQUEST['Nombre']=="" or $_REQUEST['username']=="" or $_REQUEST['password']=="" or $_REQUEST['Apellido']=="" or $_REQUEST['Correo']=="") {
+            echo'<script type="text/javascript">
+            alert("TODOS LOS CAPOS SON OBLIGATORIOS");
+            window.location.href="index.php?c=Usuario";
+            </script>';
+            echo "sapo";
+        }else{
+            $usua->id = $_REQUEST['id'];
         $usua->Nombre = $_REQUEST['Nombre'];
         $usua->username = $_REQUEST['username'];
         $usua->password = md5($_REQUEST['password']);
@@ -38,6 +44,8 @@ class UsuarioController{
         $usua->Correo = $_REQUEST['Correo'];
         $usua->id_tipo = $_REQUEST['id_tipo'];
         $usua->FechaNacimiento = $_REQUEST['FechaNacimiento'];
+        }
+        
 
         $usua->id > 0
             ? $this->model->Actualizar($usua)

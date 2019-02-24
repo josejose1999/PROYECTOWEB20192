@@ -19,12 +19,19 @@
 
     <div class="form-group">
         <label>username</label>
-        <input type="text" name="username" value="<?php echo $usua->username; ?>" class="form-control" placeholder="Ingrese su nombre" data-validacion-tipo="requerido|min:3" />
+        <input type="text" name="username" value="<?php echo $usua->username; ?>" class="form-control" placeholder="Ingrese su nombre" data-validacion-tipo="requerido|min:3" required/>
     </div>
 
     <div class="form-group">
         <label>password</label>
-        <input type="password" name="password" value="<?php echo $usua->password; ?>" class="form-control" placeholder="Ingrese su nombre" data-validacion-tipo="requerido|min:3" />
+        <input type="password" name="password" value="<?php $len=mb_strlen($usua->password,'UTF-8'); 
+            if($len>30){
+                echo "";
+            }else{
+                echo "$usua->password"; 
+            }
+         ?>"
+          class="form-control" placeholder="Ingrese su nombre" data-validacion-tipo="requerido|min:3" required />
     </div>
     
     <div class="form-group">
@@ -34,7 +41,7 @@
     
     <div class="form-group">
         <label>Correo</label>
-        <input type="text" name="Correo" value="<?php echo $usua->Correo; ?>" class="form-control" placeholder="Ingrese su correo electrónico" data-validacion-tipo="requerido|email" />
+        <input type="email" name="Correo" value="<?php echo $usua->Correo; ?>" class="form-control" placeholder="Ingrese su correo electrónico" data-validacion-tipo="requerido|email" />
     </div>
     
     <div class="form-group">
