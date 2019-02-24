@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 24-02-2019 a las 07:47:17
+-- Tiempo de generación: 24-02-2019 a las 15:16:35
 -- Versión del servidor: 10.1.37-MariaDB
 -- Versión de PHP: 7.3.0
 
@@ -21,6 +21,33 @@ SET time_zone = "+00:00";
 --
 -- Base de datos: `user`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `citas`
+--
+
+CREATE TABLE `citas` (
+  `id` int(11) NOT NULL,
+  `FechaTentativa` date NOT NULL,
+  `HoraCita` time(6) NOT NULL,
+  `NombreOptica` varchar(100) NOT NULL,
+  `Nombre` varchar(100) NOT NULL,
+  `Celular` varchar(100) NOT NULL,
+  `Telefono` varchar(100) NOT NULL,
+  `Correo` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Volcado de datos para la tabla `citas`
+--
+
+INSERT INTO `citas` (`id`, `FechaTentativa`, `HoraCita`, `NombreOptica`, `Nombre`, `Celular`, `Telefono`, `Correo`) VALUES
+(1, '2019-02-13', '15:00:00.000000', 'lisseth corporation', 'lisseth matias', '9148887722', '2670259', 'shirleym96@hotmail.com'),
+(2, '2019-02-08', '15:00:00.000000', 'llllllll', 'fernandez', '9148887722', '2670259', 'shirleym96@hotmail.com'),
+(3, '2019-02-09', '14:00:00.000000', 'miriam', 'miriam fernandez', '9148887722', '2670259', 'shirleym96@hotmail.com'),
+(4, '2019-02-14', '14:00:00.000000', 'miriam', 'lisseth matias', '9148887722', '2670259', 'shirleym96@hotmail.com');
 
 -- --------------------------------------------------------
 
@@ -102,6 +129,12 @@ INSERT INTO `usuarios` (`id`, `Nombre`, `Apellido`, `Sexo`, `FechaNacimiento`, `
 --
 
 --
+-- Indices de la tabla `citas`
+--
+ALTER TABLE `citas`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indices de la tabla `productos`
 --
 ALTER TABLE `productos`
@@ -122,6 +155,12 @@ ALTER TABLE `usuarios`
 --
 -- AUTO_INCREMENT de las tablas volcadas
 --
+
+--
+-- AUTO_INCREMENT de la tabla `citas`
+--
+ALTER TABLE `citas`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT de la tabla `productos`
