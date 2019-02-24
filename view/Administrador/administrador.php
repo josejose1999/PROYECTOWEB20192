@@ -36,7 +36,7 @@
                   <h4>Producto</h4>
                   <!-- <div class="divider-border"></div> -->
                   <!-- <p>Contamos con una gran variedad de armazones</p> -->
-                  <a class="btn btn-default" href="?c=Producto">Ir al crud</a>
+                  <a class="btn btn-default" href="?c=Alumno">Ir al crud</a>
                 </div>
               </div>  
 
