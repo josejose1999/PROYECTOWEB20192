@@ -7,7 +7,7 @@ class AlumnoModel
 	{
 		try
 		{
-			$this->pdo = new PDO('mysql:host=localhost;dbname=user', 'root', '');
+			$this->pdo = new PDO('mysql:host=localhost;dbname=optica', 'root', '');
 			$this->pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);		        
 		}
 		catch(Exception $e)
@@ -22,7 +22,7 @@ class AlumnoModel
 		{
 			$result = array();
 
-			$stm = $this->pdo->prepare("SELECT * FROM producto");
+			$stm = $this->pdo->prepare("SELECT * FROM productos");
 			$stm->execute();
 
 			foreach($stm->fetchAll(PDO::FETCH_OBJ) as $r)
@@ -30,9 +30,9 @@ class AlumnoModel
 				$alm = new Alumno();
 
 				$alm->__SET('id', $r->id);
-				$alm->__SET('Nombre', $r->Nombre);
-                $alm->__SET('Correo', $r->Precio);
-                $alm->__SET('Foto', $r->Foto);
+				$alm->__SET('Nombre', $r->name);
+                $alm->__SET('Precio', $r->price);
+                $alm->__SET('Foto', $r->image);
 	
 				$result[] = $alm;
 			}
@@ -50,7 +50,7 @@ class AlumnoModel
 		try 
 		{
 			$stm = $this->pdo
-			           ->prepare("SELECT * FROM producto WHERE id = ?");
+			           ->prepare("SELECT * FROM productos WHERE id = ?");
 			          
 
 			$stm->execute(array($id));
@@ -66,7 +66,7 @@ class AlumnoModel
 		try 
 		{
 			$stm = $this->pdo
-			          ->prepare("DELETE FROM producto WHERE id = ?");
+			          ->prepare("DELETE FROM productos WHERE id = ?");
 
 			$stm->execute(array($id));
 		} catch (Exception $e) 
@@ -79,7 +79,7 @@ class AlumnoModel
 	{
 		try 
 		{
-			$sql = "UPDATE producto SET 
+			$sql = "UPDATE productos SET 
 						Nombre          = ?, 
                         Precio          = ?,
                         Foto            = ?
@@ -104,7 +104,7 @@ class AlumnoModel
 	{
 		try 
 		{
-		$sql = "INSERT INTO producto (Nombre,Precio,Foto) 
+		$sql = "INSERT INTO productos (name,price,image) 
 		        VALUES (?, ?, ?)";
 
 		$this->pdo->prepare($sql)

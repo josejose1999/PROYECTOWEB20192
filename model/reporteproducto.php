@@ -1,9 +1,17 @@
 <?php
 	include 'plantilla.php';
-	require 'conexion.php';
-	
-	$query = "SELECT * FROM productos";
-	$resultado = $mysqli->query($query);
+	require 'Database.php';
+
+		try
+		{
+			$pdo = Database::StartUp();     
+		}
+		catch(Exception $e)
+		{
+			die($e->getMessage());
+		}
+	$stm = $pdo->prepare("SELECT * FROM producto");
+	$stm->execute();
 	
 	$pdf = new PDF();
 	$pdf->AliasNbPages();
@@ -16,12 +24,12 @@
 	$pdf->Cell(61,6,'Precio',1,1,'C',1);
 	
 	$pdf->SetFont('Arial','',10);
-	
-	while($row = $resultado->fetch_assoc())
-	{
-		$pdf->Cell(61,6,utf8_decode($row['name']),1,0,'C');
-		$pdf->Cell(61,6,utf8_decode($row['image']),1,0,'C');
-		$pdf->Cell(61,6,utf8_decode($row['price']),1,1,'C');
-	}
+		foreach($stm->fetchAll(PDO::FETCH_OBJ) as $r)
+			{
+				$pdf->Cell(61,6,utf8_decode($r->Nombre),1,0,'C');
+				$pdf->Cell(61,6,utf8_decode($r->Foto),1,0,'C');;
+				$pdf->Cell(61,6,utf8_decode($r->Precio),1,1,'C');
+			}
+
 	$pdf->Output();
 ?>

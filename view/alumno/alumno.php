@@ -26,7 +26,7 @@
                 <?php endif; ?> 
             </td>
             <td><?php echo $r->__GET('Nombre'); ?></td>
-                    <td><?php echo $r->__GET('Correo'); ?></td>
+            <td><?php echo $r->__GET('Precio'); ?></td>
             <td>
                 <a onclick="EditarUsuario(<?php echo $r->__GET('id'); ?>);">Editar</a>
             </td>
