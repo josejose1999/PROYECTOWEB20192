@@ -1,32 +1,48 @@
-<br><br>
-<div class="container">
 <h1 class="page-header">
-    <?php echo $pro->id != null ? $pro->name : 'Nuevo Registro'; ?>
+    <?php echo $alm->__GET('id') != null ? $alm->__GET('name') : 'Nuevo Registro'; ?>
 </h1>
 
 <ol class="breadcrumb">
-  <li><a href="?c=Producto">Productos</a></li>
-  <li class="active"><?php echo $pro->id != null ? $pro->name : 'Nuevo Registro'; ?></li>
+  <li><a href="?c=Producto">`Producto</a></li>
+  <li class="active"><?php echo $alm->__GET('id') != null ? $alm->__GET('name') : 'Nuevo Registro'; ?></li>
 </ol>
 
-<form id="frm-producto" action="?c=Producto&a=Guardar" method="post" enctype="multipart/form-data">
-    <input type="hidden" name="id" value="<?php echo $pro->id; ?>" />
+<form id="frm-alumno" action="?c=Producto&a=Guardar" method="post" enctype="multipart/form-data">
+    <input type="hidden" name="id" value="<?php echo $alm->__GET('id'); ?>" />
     
     <div class="form-group">
-        <label>Nombre</label>
-        <input type="text" name="name" value="<?php echo $pro->name; ?>" class="form-control" placeholder="Ingrese el nombre del producto" data-validacion-tipo="requerido|min:3" required/>
+        <label>Nombre del producto</label>
+        <input type="text" name="name" value="<?php echo $alm->__GET('name'); ?>" class="form-control" placeholder="Ingrese el nombre" data-validacion-tipo="requerido|min:3" />
     </div>
     
-    <div class="form-group">
-        <label>Imagen del producto</label>
-        <input type="text" name="image" value="<?php echo $pro->image; ?>" class="form-control" placeholder="Ingrese la imagen" data-validacion-tipo="requerido|min:10" accept="image/*" required />
+   
+<div class="row">
+        <div class="col-xs-6">
+            <div class="form-group">
+                <label>Foto</label>
+                <input type="hidden" name="image" value="<?php echo $alm->__GET('image'); ?>" />
+                <input type="file" name="image" placeholder="Ingrese una imagen" />
+            </div>     
+        </div>
+        <div class="col-xs-6">
+            <?php if($alm->__GET('image') != ''): ?>
+                <div class="img-thumbnail text-center">
+                    <img src="uploads/<?php echo $alm->__GET('image'); ?>" style="width:50%;" />
+                </div>
+            <?php endif; ?>            
+        </div>
     </div>
+
     
     <div class="form-group">
         <label>Precio</label>
-        <input type="number" name="price" value="<?php echo $pro->price; ?>" class="form-control" placeholder="Ingrese su correo electrónico" data-validacion-tipo="requerido|precio" required />
+        <input type="number" name="price" value="<?php echo $alm->__GET('price'); ?>" class="form-control" placeholder="Ingrese el precio"  />
     </div>
-        
+    
+  
+    
+    
+    
     <hr />
     
     <div class="text-right">
@@ -36,10 +52,8 @@
 
 <script>
     $(document).ready(function(){
-        $("#frm-producto").submit(function(){
+        $("#frm-alumno").submit(function(){
             return $(this).validate();
         });
     })
 </script>
-<br><br>
-</div>
