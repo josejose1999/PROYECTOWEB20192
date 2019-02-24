@@ -19,12 +19,12 @@
     
     <div class="form-group">
         <label>Imagen del producto</label>
-        <input type="file" name="image" value="<?php echo $pro->image; ?>" class="form-control" placeholder="Ingrese la imagen" data-validacion-tipo="requerido|min:10" accept="image/*" />
+        <input type="text" name="image" value="<?php echo $pro->image; ?>" class="form-control" placeholder="Ingrese la imagen" data-validacion-tipo="requerido|min:10" accept="image/*" required />
     </div>
     
     <div class="form-group">
         <label>Precio</label>
-        <input type="number" name="price" value="<?php echo $pro->price; ?>" class="form-control" placeholder="Ingrese su correo electrónico" data-validacion-tipo="requerido|precio" />
+        <input type="number" name="price" value="<?php echo $pro->price; ?>" class="form-control" placeholder="Ingrese su correo electrónico" data-validacion-tipo="requerido|precio" required />
     </div>
         
     <hr />

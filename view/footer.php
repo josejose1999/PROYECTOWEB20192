@@ -1,7 +1,7 @@
 
 <!--FOOTER-->
-<div class="footer">
-        <footer id="myFooter">
+<div class="footer" ">
+        <div id="myFooter">
             <div class="container">
                 <div class="row">
                       <div class="col-md-3 col-sm-3">
@@ -44,7 +44,7 @@
                 <div class="footer-copyright">
                     <p>© 2032 Copyright Text </p>
                 </div>
-        </footer>
+        </divs>
 </div>
 <!--SCRIPT-->
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>

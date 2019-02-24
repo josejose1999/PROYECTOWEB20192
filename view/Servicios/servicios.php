@@ -1,4 +1,4 @@
-<!--wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww-->
+<!--wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww--><br>
   <div id="optometrico" class="fondob hidden-sm ">
           <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12 arreglar ">
                       <img src="img/exoftal.jpg" alt="" class="img-responsive">
