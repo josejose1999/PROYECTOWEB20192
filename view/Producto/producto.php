@@ -19,9 +19,9 @@
     <tbody>
     <?php foreach($this->model->Listar() as $r): ?>
         <tr>
-            <td><?php echo $r->Nombre; ?></td>
-            <td><?php echo $r->Imagen; ?></td>
-            <td><?php echo $r->Precio; ?></td>
+            <td><?php echo $r->name; ?></td>
+            <td><?php echo $r->image; ?></td>
+            <td><?php echo $r->price; ?></td>
             <td>
                 <a href="?c=Producto&a=Crud&id=<?php echo $r->id; ?>">Editar</a>
             </td>

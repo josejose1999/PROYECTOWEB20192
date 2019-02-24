@@ -4,9 +4,9 @@ class Producto
 	private $pdo;
     
     public $id;
-    public $Nombre;
-    public $Imagen;
-    public $Precio;
+    public $name;
+    public $image;
+    public $price;
     
 
 	public function __CONSTRUCT()
@@ -73,17 +73,17 @@ class Producto
 		try 
 		{
 			$sql = "UPDATE productos SET 
-						Nombre          = ?, 
-						Imagen        = ?,
-                        Precio        = ?
+						name          = ?, 
+						image        = ?,
+                        price        = ?
 				    WHERE id = ?";
 
 			$this->pdo->prepare($sql)
 			     ->execute(
 				    array(
-                        $data->Nombre, 
-                        $data->Imagen,
-                        $data->Precio,
+                        $data->name, 
+                        $data->image,
+                        $data->price,
                         $data->id
 					)
 				);
@@ -97,15 +97,15 @@ class Producto
 	{
 		try 
 		{
-		$sql = "INSERT INTO Productos (Nombre,Imagen,Precio) 
+		$sql = "INSERT INTO Productos (name,image,price) 
 		        VALUES (?, ?, ?)";
 
 		$this->pdo->prepare($sql)
 		     ->execute(
 				array(
-                    $data->Nombre,
-                    $data->Imagen, 
-                    $data->Precio
+                    $data->name,
+                    $data->image, 
+                    $data->price
                 )
 			);
 		} catch (Exception $e) 

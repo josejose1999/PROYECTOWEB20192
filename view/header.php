@@ -103,14 +103,15 @@
                             <ul class="dropdown-menu">
                                 <li><a href="#beneficios">Beneficios de Uso</a></li>
                                 <li><a href="#caracteristicas">Caracteristicas</a></li>
+                                <li><a href="#tienda">Tienda Online</a></li>
                                 <!-- <li><a href="servicios.html">Subcripciones</a></li> -->
                             </ul>
                         </li>
                         <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Productos
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Compras
                                 <span class="caret"></span></a>
                             <ul class="dropdown-menu">
-                                <li><a href="?c=Armazones">Armazones y Gafas</a></li>
+                                <li><a href="?c=Armazones">Carrito</a></li>
                                 <li><a href="?c=Marcas">Marcas</a></li>
                             </ul>
                         </li>

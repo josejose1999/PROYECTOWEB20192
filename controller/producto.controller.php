@@ -31,9 +31,9 @@ class ProductoController{
         $pro = new Producto();
         
         $pro->id = $_REQUEST['id'];
-        $pro->Nombre = $_REQUEST['Nombre'];
-        $pro->Imagen = $_REQUEST['Imagen'];
-        $pro->Precio = $_REQUEST['Precio'];
+        $pro->name = $_REQUEST['name'];
+        $pro->image = $_REQUEST['image'];
+        $pro->price = $_REQUEST['price'];
     
         $pro->id > 0 
             ? $this->model->Actualizar($pro)
