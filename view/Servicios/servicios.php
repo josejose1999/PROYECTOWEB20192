@@ -51,43 +51,7 @@
             <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12 ajuste">
                 <h1>Examen Optometrico</h1>
                 <h4>Ajendar Cita</h4>
-              <div>
-              <form >
-                <div class="form-group">
-                  <label for="nombre" class="sr-only">Nombre</label>
-                  <input type="text" class="form-control" id="nombre" placeholder="Nombre" required>
-                </div>
-                <div class="form-group">
-                  <label for="apellido" class="sr-only">Apellido</label>
-                  <input type="text" class="form-control" id="apellido" placeholder="Apellido" required>
-                </div>
-              <!--<button class="btn btn-primary">Login</button>-->
-              
-
-              
-                <div class="form-group">
-                  <label for="celular" class="sr-only">Celular</label>
-                  <input type="text" class="form-control" id="celular" placeholder="Celular" required>
-                </div>
-                <div class="form-group">
-                  <label for="convencional" class="sr-only">Telefono Convencional</label>
-                  <input type="text" class="form-control" id="convencional" placeholder="Telefono Convencional" required>
-                </div> 
-              
-                <div class="form-group">
-                  <label for="email" class="sr-only">E-Mail</label>
-                  <input type="text" class="form-control" id="email" placeholder="E-Mail" required>
-                </div>
-                <div class="form-group">
-                  <label for="menssaje" class="sr-only">Mensaje</label>
-                  <input type="text" class="form-control" id="menssaje" placeholder="Mensaje" required>
-                </div> 
-
-              <div>
-              <a href="consulta1.html" class="btn btn-warning ajustar">Ver mas Detalles</a>
-              <button type="submit" class="btn btn-primary ajustar">Enviar</button>
-              </div>
-            </form>
+               <a class="btn btn-primary" href="?c=Cita&a=Crud">Nueva cita</a>
             </div>
               <hr>
             </div>
@@ -171,6 +135,7 @@
               <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12 ajuste ">
                 <h1>Examen Oftalmologico</h1>
                 <h4>Agendar Cita</h4>
+                 <a class="btn btn-primary" href="?c=Cita&a=Crud">Nueva cita</a>
               </div>
               <hr>
               </div>    
@@ -226,47 +191,10 @@
              <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12 ajuste ">
                 <h1>Adaptacion de Lentes de Contacto</h1>
                 <h4>Ajendar Cita</h4>
-            <form>
-            <div>
-             
-                <div class="form-group">
-                  <label for="nombre" class="sr-only">Nombre</label>
-                  <input type="text" class="form-control" id="nombre" placeholder="Nombre" required>
-                </div>
-                <div class="form-group">
-                  <label for="apellido" class="sr-only">Apellido</label>
-                  <input type="text" class="form-control" id="apellido" placeholder="Apellido" required>
-                </div>
-              <!--<button class="btn btn-primary">Login</button>-->
-              
-
-           
-                <div class="form-group">
-                  <label for="celular" class="sr-only">Celular</label>
-                  <input type="text" class="form-control" id="celular" placeholder="Celular" required>
-                </div>
-                <div class="form">
-                  <label for="convencional" class="sr-only">Telefono Convencional</label>
-                  <input type="text" class="form-control" id="convencional" placeholder="Telefono Convencional" required>
-                </div> 
-         
-
-              
-                <div class="form-group">
-                  <label for="email" class="sr-only">E-Mail</label>
-                  <input type="text" class="form-control" id="email" placeholder="E-Mail" required>
-                </div>
-                <div class="form-group">
-                  <label for="mensaje" class="sr-only">Mensaje</label>
-                  <input type="text" class="form-control" id="mensaje" placeholder="Mensaje" required>
-                </div> 
-             <div>
-              <a href="consulta3.html" class="btn btn-info ajustar">Ver mas Detalles</a>
-              <button type="submit" class="btn btn-primary ajustar">Enviar</button>
-              </div>
-            </form>
+                 <a class="btn btn-primary" href="?c=Cita&a=Crud">Nueva cita</a>
             </div>
               <hr>
+
             </div>
           </div>
 <!--wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww-->
