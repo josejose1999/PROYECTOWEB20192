@@ -10,7 +10,7 @@
 		{
 			die($e->getMessage());
 		}
-	$stm = $pdo->prepare("SELECT * FROM producto");
+	$stm = $pdo->prepare("SELECT * FROM productos");
 	$stm->execute();
 	
 	$pdf = new PDF();
@@ -26,9 +26,9 @@
 	$pdf->SetFont('Arial','',10);
 		foreach($stm->fetchAll(PDO::FETCH_OBJ) as $r)
 			{
-				$pdf->Cell(61,6,utf8_decode($r->Nombre),1,0,'C');
-				$pdf->Cell(61,6,utf8_decode($r->Foto),1,0,'C');;
-				$pdf->Cell(61,6,utf8_decode($r->Precio),1,1,'C');
+				$pdf->Cell(61,6,utf8_decode($r->name),1,0,'C');
+				$pdf->Cell(61,6,utf8_decode($r->image),1,0,'C');;
+				$pdf->Cell(61,6,utf8_decode($r->price),1,1,'C');
 			}
 
 	$pdf->Output();
