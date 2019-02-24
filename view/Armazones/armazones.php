@@ -11,13 +11,13 @@
 
 <div style="clear:both"></div>
       <br />
-      <h3>Order Details</h3>
-      <div class="table-responsive">
+      <h3 style="padding-left:30px; text-align: center;">Detalles De La Orden</h3>
+      <div class="table-responsive" style="padding: 50px;">
         <table class="table table-bordered">
           <tr>
-            <th width="40%">Item Name</th>
-            <th width="10%">Quantity</th>
-            <th width="20%">Price</th>
+            <th width="40%">Nombre Del Producto</th>
+            <th width="10%">Cantidad</th>
+            <th width="20%">Precio</th>
             <th width="15%">Total</th>
             <th width="5%">Action</th>
           </tr>
@@ -50,7 +50,8 @@
             
         </table>
       </div>
-<button class="btn btn-primary href="javascript:void(0)" data-toggle="modal" data-target="#id33" on"/>Comprar</button>
+      <div style="margin: 0 auto; padding: 30px; text-align-last: center;">
+<button class="btn btn-primary href="javascript:void(0)" data-toggle="modal" data-target="#id33" on"" />Comprar</button></div>
 
 <!--comprar-->
 
