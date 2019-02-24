@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 23-02-2019 a las 01:50:08
+-- Tiempo de generación: 24-02-2019 a las 03:28:18
 -- Versión del servidor: 10.1.37-MariaDB
--- Versión de PHP: 7.3.1
+-- Versión de PHP: 7.3.0
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -25,25 +25,25 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `producto`
+-- Estructura de tabla para la tabla `productos`
 --
 
-CREATE TABLE `producto` (
+CREATE TABLE `productos` (
   `id` int(11) NOT NULL,
-  `name` varchar(255) NOT NULL,
-  `image` varchar(2000) NOT NULL,
-  `price` double(10,2) NOT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+  `Nombre` varchar(50) NOT NULL DEFAULT '0',
+  `Imagen` varchar(200) NOT NULL DEFAULT '0',
+  `Precio` float NOT NULL DEFAULT '0'
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Volcado de datos para la tabla `producto`
+-- Volcado de datos para la tabla `productos`
 --
 
-INSERT INTO `producto` (`id`, `name`, `image`, `price`) VALUES
-(1, 'Samsung J2 Pro', '1.jpg', 100.00),
-(2, 'HP Notebook', '2.jpg', 299.00),
-(3, 'Panasonic T44 Lite', '3.jpg', 125.00),
-(10, 'Nelly Del Rocio', '1.jpg', 123.00);
+INSERT INTO `productos` (`id`, `Nombre`, `Imagen`, `Precio`) VALUES
+(14, 'sas', 'sasa', 1221),
+(16, 'asas', 'sasa', 23345),
+(17, 'assas', 'dsdss', 5454),
+(19, 'saasa', 'assassas', 123435000000);
 
 -- --------------------------------------------------------
 
@@ -80,28 +80,29 @@ CREATE TABLE `usuarios` (
   `Correo` varchar(50) NOT NULL,
   `username` varchar(20) NOT NULL,
   `password` varchar(100) NOT NULL,
-  `id_tipo` int(11) NOT NULL
+  `id_tipo` int(11) NOT NULL,
+  `foto` varchar(150) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Volcado de datos para la tabla `usuarios`
 --
 
-INSERT INTO `usuarios` (`id`, `Nombre`, `Apellido`, `Sexo`, `FechaNacimiento`, `FechaRegistro`, `Correo`, `username`, `password`, `id_tipo`) VALUES
-(11, 'Jose Armando', 'Bonilla Peña', 0, '2019-02-22', '2019-02-22', 'josebonillapea1998@gmail.com', 'josejose1998', '827ccb0eea8a706c4c34a16891f84e7b', 2),
-(12, 'Jose Armando', 'Bonilla Peña', 0, '2019-02-22', '2019-02-22', 'josebonillapea1998@gmail.com', 'josejose1999', '202cb962ac59075b964b07152d234b70', 2),
-(13, 'jose', 'Vera', 0, '', '2019-02-22', 'josebonillapea1998@gmail.com', 'josejose1997', '827ccb0eea8a706c4c34a16891f84e7b', 1),
-(14, 'Jose Armando', 'Bonilla', 0, '', '2019-02-23', 'josebonillapea1998@gmail.com', 'sebas', '0d40d9aea2b3b5a149dc34495fff0a0a', 2),
-(15, 'Jose', 'Peña', 0, '', '2019-02-23', 'josebonillapea1998@gmail.com', 'sebas1', '85f2a6573595845926885f65de7060a5', 2);
+INSERT INTO `usuarios` (`id`, `Nombre`, `Apellido`, `Sexo`, `FechaNacimiento`, `FechaRegistro`, `Correo`, `username`, `password`, `id_tipo`, `foto`) VALUES
+(4, 'sebastian', 'adsadd', 1, '3183-02-12', '2019-02-21', 'sdsjd@gof.com', 'sebas', '0d40d9aea2b3b5a149dc34495fff0a0a', 2, ''),
+(5, 'Liset Sapa', 'Cabeza de Pato', 2, '3932-03-21', '2019-02-21', 'dsdj@hof.com', 'lise', 'e8d2a7b40868c9953638abcdae19e4ed', 1, ''),
+(7, 'sjasasj', 'djadsjs', 1, '2283-03-12', '2019-02-21', 'dsds@gofdk.com', '', '', 0, ''),
+(8, 'cabeza de sapo', 'qekesjd', 1, '2332-03-12', '2019-02-21', '€wsdd@gjdjs.com', '', '', 0, ''),
+(9, 'Luigi', 'Arreaga', 0, '1998-02-06', NULL, 'luigi.arreagawda@djxj.com', 'luigi', 'd9b1d7db4cd6e70935368a1efb10e377', 1, '2019-02-23');
 
 --
 -- Índices para tablas volcadas
 --
 
 --
--- Indices de la tabla `producto`
+-- Indices de la tabla `productos`
 --
-ALTER TABLE `producto`
+ALTER TABLE `productos`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -121,16 +122,16 @@ ALTER TABLE `usuarios`
 --
 
 --
--- AUTO_INCREMENT de la tabla `producto`
+-- AUTO_INCREMENT de la tabla `productos`
 --
-ALTER TABLE `producto`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+ALTER TABLE `productos`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 
 --
 -- AUTO_INCREMENT de la tabla `usuarios`
 --
 ALTER TABLE `usuarios`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
