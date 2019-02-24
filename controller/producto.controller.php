@@ -1,49 +1,64 @@
 <?php
-require_once 'model/productos.php';
+require_once 'model/producto.entidad.php';
+require_once 'model/producto.model.php';
 
 class ProductoController{
     
     private $model;
     
     public function __CONSTRUCT(){
-        $this->model = new Producto();
+        $this->model = new ProductoModel();
     }
     
     public function Index(){
         require_once 'view/header.php';
-        require_once 'view/Producto/producto.php';
+        require_once 'view/producto/producto.php';
         require_once 'view/footer.php';
     }
     
     public function Crud(){
-        $pro = new Producto();
+        $alm = new Producto();
         
         if(isset($_REQUEST['id'])){
-            $pro= $this->model->Obtener($_REQUEST['id']);
+            $alm = $this->model->Obtener($_REQUEST['id']);
         }
         
         require_once 'view/header.php';
-        require_once 'view/Producto/producto-editar.php';
+        require_once 'view/producto/producto-editar.php';
         require_once 'view/footer.php';
     }
     
-    public function Guardar(){
-        $pro = new Producto();
-        
-        $pro->id = $_REQUEST['id'];
-        $pro->name = $_REQUEST['name'];
-        $pro->image = $_REQUEST['image'];
-        $pro->price = $_REQUEST['price'];
-    
-        $pro->id > 0 
-            ? $this->model->Actualizar($pro)
-            : $this->model->Registrar($pro);
-        
-        header('Location: index.php?c=Producto');
+    public function Obtener()
+    {
+        $alm = $this->model->Obtener($_REQUEST['id']);
+        print_r( json_encode( $alm ) );
     }
+    
+    public function Guardar(){
+        $alm = new Producto();
+        
+        $alm->__SET('id',              $_REQUEST['id']);
+        $alm->__SET('name',          $_REQUEST['name']);
+        $alm->__SET('image',            $_REQUEST['image']);
+        $alm->__SET('price',          $_REQUEST['price']);
+        
+        if( !empty( $_FILES['name']['name'] ) ){
+            $foto = date('ymdhis') . '-' . strtolower($_FILES['name']['name']);
+            move_uploaded_file ($_FILES['name']['tmp_name'], 'uploads/' . $foto);
+            
+            $alm->__SET('image', $foto);
+        }
+
+        if($alm->__GET('id') != '' ? 
+           $this->model->Actualizar($alm) : 
+           $this->model->Registrar($alm));
+        
+        header('Location: index.php');
+    }
+    
     
     public function Eliminar(){
         $this->model->Eliminar($_REQUEST['id']);
-         header('Location: index.php?c=Producto');
+        header('Location: index.php');
     }
 }

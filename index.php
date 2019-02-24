@@ -133,29 +133,27 @@ else{
 }
 
 
- if(!isset($_REQUEST['c']))
-{
-    require_once "controller/$controller3.controller.php";
+
+// Todo esta lógica hara el papel de un FrontController
+if(!isset($_REQUEST['c'])){
+    // Controlador por defecto
+    require_once 'controller/$controller3.controller.php';
     $controller3 = ucwords($controller3) . 'Controller';
     $controller3 = new $controller3;
-    $controller3->Index();
-
-
-}
-else
-{
-    // Obtenemos el controlador que queremos cargar
-    $controller3 = strtolower($_REQUEST['c']);
-    $accion = isset($_REQUEST['a']) ? $_REQUEST['a'] : 'Index';
+    $controller3->Index();    
+} else {
     
-    // Instanciamos el controlador
-    require_once "controller/$controller3.controller.php";
-    $controller3 = ucwords($controller3) . 'Controller';
-    $controller3 = new $controller3;
+    // Obtenemos el controlador que queremos cargar
+    require_once 'controller/' . strtolower($_REQUEST['c']) . '.controller.php';
+    $controller3 = $_REQUEST['c'] . 'Controller';
+    $accion     = isset($_REQUEST['a']) ? $_REQUEST['a'] : 'Index';
+    
+
     
     // Llama la accion
     call_user_func( array( $controller3, $accion ) );
 }
+
 
 
  if(!isset($_REQUEST['c']))
@@ -174,7 +172,7 @@ else
     $accion = isset($_REQUEST['a']) ? $_REQUEST['a'] : 'Index';
     
     // Instanciamos el controlador
-    require_once "controller/$controller3.controller.php";
+    require_once "controller/$controller4.controller.php";
     $controller4 = ucwords($controller4) . 'Controller';
     $controller4 = new $controller4;
     
