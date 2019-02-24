@@ -14,7 +14,7 @@
     
     <div class="form-group">
         <label>Nombre</label>
-        <input type="text" name="Nombre" value="<?php echo $usua->Nombre; ?>" class="form-control" placeholder="Ingrese su nombre" data-validacion-tipo="requerido|min:3" required />
+        <input type="text" name="Nombre" value="<?php echo $usua->Nombre; ?>" class="form-control" placeholder="Ingrese su nombre" data-validacion-tipo="requerido|min:3" />
     </div>
 
     <div class="form-group">
