@@ -44,6 +44,7 @@ if(isset($_SESSION['user'])){
 
 $controller = 'inicio';
 $controller2 = 'usuario';
+$controller3= 'producto';
 
 
 // Todo esta lógica hara el papel de un FrontController
@@ -124,4 +125,32 @@ else{
 }
 }
 }
+
+
+
+
+ if(!isset($_REQUEST['c']))
+{
+    require_once "controller/$controller3.controller.php";
+    $controller3 = ucwords($controller3) . 'Controller';
+    $controller3 = new $controller3;
+    $controller3->Index3();
+
+
+}
+else
+{
+    // Obtenemos el controlador que queremos cargar
+    $controller3 = strtolower($_REQUEST['c']);
+    $accion = isset($_REQUEST['a']) ? $_REQUEST['a'] : 'Index3';
+    
+    // Instanciamos el controlador
+    require_once "controller/$controller3.controller.php";
+    $controller3 = ucwords($controller3) . 'Controller';
+    $controller3 = new $controller3;
+    
+    // Llama la accion
+    call_user_func( array( $controller3, $accion ) );
+}
+
 

@@ -53,6 +53,7 @@
           <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
          <script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap.min.js"></script>
          <script src="https://cdn.datatables.net/plug-ins/1.10.19/i18n/Spanish.json"></script>
+         
          <script>
              $(document).ready(function() {
     $('#tabla1').DataTable( {
@@ -60,8 +61,23 @@
             "url": "//cdn.datatables.net/plug-ins/1.10.19/i18n/Spanish.json"
         }
     } );
+
 } );    
          </script>
+
+         
+          <script>
+             $(document).ready(function() {
+    $('#tabla2').DataTable( {
+        "language": {
+            "url": "//cdn.datatables.net/plug-ins/1.10.19/i18n/Spanish.json"
+        }
+    } );
+
+} );    
+         </script>
+  
+
     </body>
 </html>
 
