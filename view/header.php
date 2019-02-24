@@ -169,7 +169,7 @@
                 echo $errorLogin;
             }
         ?>
-        <div class="" style="border-style: solid; background: white; padding: 20px; margin: 0 auto; margin-top: 90px; z-index: 4 !important; width: 60%; ">
+        <div class="" style="background: white; padding: 20px; margin: 0 auto; margin-top: 90px; z-index: 4 !important; width: 60%; ">
         <h2>Iniciar sesión</h2>
         <p>Nombre de usuario: <br>
         <input type="text" name="username"></p>
