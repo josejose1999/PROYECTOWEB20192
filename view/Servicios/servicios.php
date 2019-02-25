@@ -4,53 +4,7 @@
                       <img src="img/exoftal.jpg" alt="" class="img-responsive">
           </div>
           <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12 ajuste ">
-
                       <h1>Examen Optometrico</h1>
-                      <h4>Agendar Cita</h4>
-            <div class="container-fluid">
-                  <form class="form-horizontal form-label-left">
-                    
-                        <div class="form-inline col-md-12 col-lg-6">
-                          <label for="Usuario" class="sr-only">Nombre</label>
-                          <input type="text" class="form-control" id="Usuario" placeholder="Nombre" required ">
-                        </div>
-                        <div class="form-inline col-md-12 col-lg-6">
-                          <label for="apellido" class="sr-only">Apellido</label>
-                          <input type="text" class="form-control" id="apellido" placeholder="Apellido" required>
-                        </div>
-                    <!--<button class="btn btn-primary">Login</button>-->
-                    
-
-                   
-                        <div class="form-inline col-md-12 col-lg-6">
-                                    <label for="Usuario" class="sr-only">Celular</label>
-                                    <input type="text" class="form-control" id="Usuario" placeholder="Celular" required>
-                        </div>
-                        <div class="form-inline col-md-12 col-lg-6">
-                                    <label for="contraseña" class="sr-only">Telefono Convencional</label>
-                                    <input type="text" class="form-control" id="convencional" placeholder="Telefono Convencional" required>
-                        </div> 
-                                
-
-                                
-                        <div class="form-inline col-md-12 col-lg-6 ">
-                                    <label for="Usuario" class="sr-only">E-Mail</label>
-                                    <input type="text" class="form-control" id="Usuario" placeholder="E-Mail" required>
-                        </div>
-                        <div class="form-inline col-md-12 col-lg-6">
-                                    <label for="contraseña" class="sr-only">Mensaje</label>
-                                    <input type="text" class="form-control" id="mensaje" placeholder="Mensaje" required>
-                        </div> 
-                              
-                        <div >...<hr></div>
-                        <div class="">
-                                    <a href="consulta1.html" class="btn btn-warning ">Ver mas Detalles</a>
-                                    <button type="submit" class="btn btn-primary">Enviar</button>
-                        </div>
-                    
-                    
-                  </form>
-            </div>
             <hr>
             <div class="panel panel-warning hidden-xs hidden-md hidden-sm">
                             <div class="panel-heading">
@@ -59,82 +13,12 @@
                             <div class="panel-body">
                               Un optómetra calificado debe practicar el examen optométrico, a todas las personas que resulten positivas en las actividades de detección temprana de las alteraciones de la agudeza visual
                             </div>
-                            <table class="table">
-                              <tr>
-                                <td><b>Nota 1</b></td>
-                                <td><b>Nota 2</b></td>
-                                <td><b>Nota 3</b></td>
-                                <td><b>Nota 4</b></td>
-                              </tr>
-                              <tr>
-                                <td><i>Medición ocular</i></td>
-                                <td>Estática</td>
-                                <td>Dinámica</td>
-                                <td>Ambas</td>
-                              </tr>
-                              <tr>
-                                <td>Queratometría</td>
-                                <td>Visión cromática</td>
-                                <td>Visión estereoscópica</td>
-                                <td>Aplanación</td>
-                              </tr>
-                             
-                            </table>
+                       <a href="?c=Citas&a=Crud"><button class="btn btn-primary">Enviar</button></a> 
             </div>
                         
           </div>
   </div>
 
-<!--wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww-->
-          <div id="optometrico" class="fondob hidden-md hidden-xs hidden-lg">
-            <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
-                <img src="img/exoftal.jpg" alt="" class="img-responsive">
-              </div>
-            <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12 ajuste">
-                <h1>Examen Optometrico</h1>
-                <h4>Ajendar Cita</h4>
-              <div>
-              <form >
-                <div class="form-group">
-                  <label for="nombre" class="sr-only">Nombre</label>
-                  <input type="text" class="form-control" id="nombre" placeholder="Nombre" required>
-                </div>
-                <div class="form-group">
-                  <label for="apellido" class="sr-only">Apellido</label>
-                  <input type="text" class="form-control" id="apellido" placeholder="Apellido" required>
-                </div>
-              <!--<button class="btn btn-primary">Login</button>-->
-              
-
-              
-                <div class="form-group">
-                  <label for="celular" class="sr-only">Celular</label>
-                  <input type="text" class="form-control" id="celular" placeholder="Celular" required>
-                </div>
-                <div class="form-group">
-                  <label for="convencional" class="sr-only">Telefono Convencional</label>
-                  <input type="text" class="form-control" id="convencional" placeholder="Telefono Convencional" required>
-                </div> 
-              
-                <div class="form-group">
-                  <label for="email" class="sr-only">E-Mail</label>
-                  <input type="text" class="form-control" id="email" placeholder="E-Mail" required>
-                </div>
-                <div class="form-group">
-                  <label for="menssaje" class="sr-only">Mensaje</label>
-                  <input type="text" class="form-control" id="menssaje" placeholder="Mensaje" required>
-                </div> 
-
-              <div>
-              <a href="consulta1.html" class="btn btn-warning ajustar">Ver mas Detalles</a>
-              <button type="submit" class="btn btn-primary ajustar">Enviar</button>
-              </div>
-            </form>
-            </div>
-              <hr>
-            </div>
-          </div>
-<!--wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww-->
           <div id="oftalmologico" class="fondon hidden-lg hidden-sm hidden-md">
            <div class="conntent-fluid">
              <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12 hidden-lg hidden-sm hidden-md arreglar">
@@ -145,48 +29,7 @@
                 <h1>Examen Oftalmologico</h1>
                 <h4>Ajendar Cita</h4>
                   <div class="container-fluid">
-                  <form class="form-horizontal form-label-left">
-                    
-                      <div class="form-inline col-md-12 col-lg-6">
-                        <label for="nombre" class="sr-only">Nombre</label>
-                        <input type="text" class="form-control" id="nombre" placeholder="Nombre" required>
-                      </div>
-                      <div class="form-inline col-md-12 col-lg-6">
-                        <label for="apellido" class="sr-only">Apellido</label>
-                        <input type="text" class="form-control" id="apellido" placeholder="Apellido" required>
-                      </div>
-                    <!--<button class="btn btn-primary">Login</button>-->
-                    
-
-                   
-                      <div class="form-inline col-md-12 col-lg-6">
-                        <label for="celular" class="sr-only">Celular</label>
-                        <input type="text" class="form-control" id="celular" placeholder="Celular" required> 
-                      </div>
-                      <div class="form-inline col-md-12 col-lg-6">
-                        <label for="convencional" class="sr-only">Telefono Convencional</label>
-                        <input type="text" class="form-control" id="convencional" placeholder="Telefono Convencional" required>
-                      </div> 
-                    
-
-                    
-                      <div class="form-inline col-md-12 col-lg-6 ">
-                        <label for="email" class="sr-only">E-Mail</label>
-                        <input type="text" class="form-control" id="email" placeholder="E-Mail" required>
-                      </div>
-                      <div class="form-inline col-md-12 col-lg-6">
-                        <label for="mensaje" class="sr-only">Mensaje</label>
-                        <input type="text" class="form-control" id="mensaje" placeholder="Mensaje" required>
-                      </div> 
                   
-                    <div>...<hr></div>
-                      <div class="">
-                        <a href="consulta2.html" class="btn btn-success ">Ver mas Detalles</a>
-                        <button type="submit" class="btn btn-primary">Enviar</button>
-                      </div>
-                    
-                    
-                      </form>
                       </div>
               
               <hr>
@@ -201,48 +44,7 @@
                 <h1>Examen Oftalmologico</h1>
                 <h4>Agendar Cita</h4>
               <div class="container-fluid">
-                  <form class="form-horizontal form-label-left">
-                    
-                      <div class="form-inline col-md-12 col-lg-6">
-                        <label for="nombre" class="sr-only">Nombre</label>
-                        <input type="text" class="form-control" id="nombre" placeholder="Nombre" required ">
-                      </div>
-                      <div class="form-inline col-md-12 col-lg-6">
-                        <label for="apellido" class="sr-only">Apellido</label>
-                        <input type="text" class="form-control" id="apellido" placeholder="Apellido" required>
-                      </div>
-                    <!--<button class="btn btn-primary">Login</button>-->
-                    
-
-                   
-                      <div class="form-inline col-md-12 col-lg-6">
-                        <label for="celular" class="sr-only">Celular</label>
-                        <input type="text" class="form-control" id="celular" placeholder="Celular" required>
-                      </div>
-                      <div class="form-inline col-md-12 col-lg-6">
-                        <label for="convencional" class="sr-only">Telefono Convencional</label>
-                        <input type="text" class="form-control" id="convencional" placeholder="Telefono Convencional" required>
-                      </div> 
-                    
-
-                    
-                      <div class="form-inline col-md-12 col-lg-6 ">
-                        <label for="email" class="sr-only">E-Mail</label>
-                        <input type="text" class="form-control" id="email" placeholder="E-Mail" required>
-                      </div>
-                      <div class="form-inline col-md-12 col-lg-6">
-                        <label for="mensaje" class="sr-only">Mensaje</label>
-                        <input type="text" class="form-control" id="mensaje" placeholder="Mensaje" required>
-                      </div> 
                   
-                    <div>...<hr></div>
-                      <div class="">
-                        <a href="consulta2.html" class="btn btn-success ">Ver mas Detalles</a>
-                        <button type="submit" class="btn btn-primary">Enviar</button>
-                      </div>
-                    
-                    
-                  </form>
                   </div>
               <hr>
                   <div class="panel panel-success hidden-xs hidden-md hidden-sm">
@@ -253,32 +55,7 @@
                         El examen oftalmológico debe ser una actividad obligatoria para el estudiante de medicina y el médico general. Su realización es
                         de suma importancia en la atención de pacientes con síntomas oculares, quienes requieren una evaluación oftalmológica completa y una descripción clínica adecuada. 
                       </div>
-                      <table class="table colorin">
-                        <tr>
-                          <td><b>Nota 1</b></td>
-                          <td><b>Nota 2</b></td>
-                          <td><b>Nota 3</b></td>
-                          <td><b>Nota 4</b></td>
-                        </tr>
-                        <tr>
-                          <td><i>Humor vítreo</i>    </td>
-                          <td><i>Cristalino</i>      </td>
-                          <td><i>Humor acuoso</i>    </td>
-                          <td><i>Repaso Ocular</i>   </td>
-                        </tr>
-                        <tr>
-                          <td><i>Patológicos   </i>  </td>
-                          <td><i>Quirúrgicos   </i>  </td>
-                          <td><i>Farmacológicos</i>  </td>
-                          <td><i>Alérgicos     </i>  </td>
-                        </tr>
-                        <tr>
-                          <td><i>Retina         </i>  </td>
-                          <td><i>Media          </i>  </td>
-                          <td><i>túnica vascular</i>  </td>
-                          <td><i>túnica fibrosa </i>  </td>
-                        </tr>
-                      </table>
+                      
                   </div>
                   
               </div>
@@ -296,45 +73,7 @@
               <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12 ajuste ">
                 <h1>Examen Oftalmologico</h1>
                 <h4>Agendar Cita</h4>
-            <form>
-              <div>
-              
-                <div class="form-group">
-                  <label for="nombre" class="sr-only">Nombre</label>
-                  <input type="text" class="form-control" id="nombre" placeholder="Nombre" required>
-                </div>
-                <div class="form-group">
-                  <label for="apellido" class="sr-only">Apellido</label>
-                  <input type="text" class="form-control" id="apellido" placeholder="Apellido" required>
-                </div>
-              <!--<button class="btn btn-primary">Login</button>-->
-              
-
-             
-                <div class="form-group">
-                  <label for="celular" class="sr-only">Celular</label>
-                  <input type="text" class="form-control" id="celular" placeholder="Celular" required>
-                </div>
-                <div class="form-group">
-                  <label for="convencional" class="sr-only">Telefono Convencional</label>
-                  <input type="text" class="form-control" id="convencional" placeholder="Telefono Convencional" required>
-                </div> 
-              
-
-              
-                <div class="form-group">
-                  <label for="email" class="sr-only">E-Mail</label>
-                  <input type="text" class="form-control" id="email" placeholder="E-Mail" required>
-                </div>
-                <div class="form-group">
-                  <label for="mensaje" class="sr-only">Mensaje</label>
-                  <input type="text" class="form-control" id="mensaje" placeholder="Mensaje" required>
-                </div> 
-              <div>
-             <a href="consulta2.html" class="btn btn-success ajustar">Ver mas Detalles</a>
-              <button type="submit" class="btn btn-primary ajustar">Enviar</button>
-              </div>
-            </form>
+            
               </div>
               <hr>
               </div>    
@@ -346,51 +85,10 @@
               </div>
              <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12 ajuste">
                 <h1>Adaptacion de Lentes de Contacto</h1>
-                <h4>Agendar Cita</h4>
+               
 
               <div class="container-fluid">
-                  <form class="form-horizontal form-label-left">
-                    
-                      <div class="form-inline col-md-12 col-lg-6">
-                        <label for="nombre" class="sr-only">Nombre</label>
-                        <input type="text" class="form-control" id="nombre" placeholder="Nombre" required ">
-                      </div>
-                      <div class="form-inline col-md-12 col-lg-6">
-                        <label for="apellido" class="sr-only">Apellido</label>
-                        <input type="text" class="form-control" id="apellido" placeholder="Apellido" required>
-                      </div>
-                    <!--<button class="btn btn-primary">Login</button>-->
-                    
-
-                   
-                      <div class="form-inline col-md-12 col-lg-6">
-                        <label for="celular" class="sr-only">Celular</label>
-                        <input type="text" class="form-control" id="celular" placeholder="Celular" required>
-                      </div>
-                      <div class="form-inline col-md-12 col-lg-6">
-                        <label for="convencional" class="sr-only">Telefono Convencional</label>
-                        <input type="text" class="form-control" id="convencional" placeholder="Telefono Convencional" required>
-                      </div> 
-                    
-
-                    
-                      <div class="form-inline col-md-12 col-lg-6 ">
-                        <label for="email" class="sr-only">E-Mail</label>
-                        <input type="text" class="form-control" id="email" placeholder="E-Mail" required>
-                      </div>
-                      <div class="form-inline col-md-12 col-lg-6">
-                        <label for="mensaje" class="sr-only">Mensaje</label>
-                        <input type="text" class="form-control" id="mensaje" placeholder="Mensaje" required> 
-                      </div> 
-                  
-                    <div>...<hr></div>
-                      <div class="">
-                        <a href="consulta3.html" class="btn btn-info ">Ver mas Detalles</a>
-                        <button type="submit" class="btn btn-primary">Enviar</button>
-                      </div>
-                    
-                    
-                    </form>
+                 
                     </div>
               <hr>
                   <div class="panel panel-info hidden-xs hidden-md hidden-sm">
@@ -400,26 +98,7 @@
                       <div class="panel-body">
                         Hacer una evaluacion completa de la vision y salud ocular, para determinar la lente más adecuada a cada paciente. En este estudio se toman medidas de la córnea tanto de su curvatura como de su diámetro, y se realiza una graduación completa.
                       </div>
-                      <table class="table">
-                        <tr>
-                          <td><b>Nota 1</b></td>
-                          <td><b>Nota 2</b></td>
-                          <td><b>Nota 3</b></td>
-                          <td><b>Nota 4</b></td>
-                        </tr>
-                        <tr>
-                          <td><i>Blandos      </i>  </td>
-                          <td><i>Gas permeable</i>  </td>
-                          <td><i>Cosméticos   </i>  </td>
-                          <td><i>De color     </i>  </td>
-                        </tr>
-                        <tr>
-                          <td><i>tóricos      </i>    </td>
-                          <td><i>presbicia    </i>    </td>
-                          <td><i>Queratocono  </i>    </td>
-                          <td><i>Fleibles     </i>    </td>
-                        </tr>
-                      </table>
+                      
                   </div>
 
             </div>
@@ -431,46 +110,7 @@
               </div>
              <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12 ajuste ">
                 <h1>Adaptacion de Lentes de Contacto</h1>
-                <h4>Ajendar Cita</h4>
-            <form>
-            <div>
-             
-                <div class="form-group">
-                  <label for="nombre" class="sr-only">Nombre</label>
-                  <input type="text" class="form-control" id="nombre" placeholder="Nombre" required>
-                </div>
-                <div class="form-group">
-                  <label for="apellido" class="sr-only">Apellido</label>
-                  <input type="text" class="form-control" id="apellido" placeholder="Apellido" required>
-                </div>
-              <!--<button class="btn btn-primary">Login</button>-->
               
-
-           
-                <div class="form-group">
-                  <label for="celular" class="sr-only">Celular</label>
-                  <input type="text" class="form-control" id="celular" placeholder="Celular" required>
-                </div>
-                <div class="form">
-                  <label for="convencional" class="sr-only">Telefono Convencional</label>
-                  <input type="text" class="form-control" id="convencional" placeholder="Telefono Convencional" required>
-                </div> 
-         
-
-              
-                <div class="form-group">
-                  <label for="email" class="sr-only">E-Mail</label>
-                  <input type="text" class="form-control" id="email" placeholder="E-Mail" required>
-                </div>
-                <div class="form-group">
-                  <label for="mensaje" class="sr-only">Mensaje</label>
-                  <input type="text" class="form-control" id="mensaje" placeholder="Mensaje" required>
-                </div> 
-             <div>
-              <a href="consulta3.html" class="btn btn-info ajustar">Ver mas Detalles</a>
-              <button type="submit" class="btn btn-primary ajustar">Enviar</button>
-              </div>
-            </form>
             </div>
               <hr>
             </div>
