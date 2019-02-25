@@ -1,3 +1,6 @@
+<br>  <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
 <br><h1 class="page-header">
     <?php echo $alm->id != null ? $alm->Nombre: 'Nuevo Registro'; ?>
 </h1>
@@ -62,3 +65,6 @@
         });
     })
 </script>
+      </div>
+        </div>            
+        </div>

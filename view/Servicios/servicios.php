@@ -13,7 +13,7 @@
                             <div class="panel-body">
                               Un optómetra calificado debe practicar el examen optométrico, a todas las personas que resulten positivas en las actividades de detección temprana de las alteraciones de la agudeza visual
                             </div>
-                       <a href="?c=Citas&a=Crud"><button class="btn btn-primary">Enviar</button></a> 
+                       <a href="?c=Cita&a=Crud"><button class="btn btn-primary">Enviar</button></a> 
             </div>
                         
           </div>
