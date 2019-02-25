@@ -50,7 +50,7 @@ if(isset($_GET["action"]))
 			if($values["item_id"] == $_GET["id"])
 			{
 				unset($_SESSION["shopping_cart"][$keys]);
-				echo '<script>alert("Item Removed")</script>';
+				echo '<script>alert("Ha Eliminado un Producto de Su Lista de Compra")</script>';
 				echo '<script>window.location="index.php"</script>';
 			}
 		}

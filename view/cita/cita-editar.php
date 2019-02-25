@@ -26,7 +26,7 @@
 
       <div class="form-group">
         <label>Nombre de la Optica</label>
-        <input type="text" name="NombreOptica" value="<?php echo $alm->NombreOptica; ?>" class="form-control" placeholder="OPTICA MEGA VISION" data-validacion-tipo="requerido|min:5" disabled="disabled" />
+        <input type="text" name="NombreOptica" value="<?php echo $alm->NombreOptica; ?>" class="form-control" placeholder="Ingrese el Nombre" data-validacion-tipo="requerido|min:5" />
     </div>
     
        <div class="form-group">
