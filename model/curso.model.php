@@ -1,5 +1,5 @@
 <?php
-require_once 'DBconnection.php';
+require_once 'database.php';
 class CursoModel
 {
 	private $pdo;
@@ -8,7 +8,7 @@ class CursoModel
 	{
 		try
 		{
-			$this->pdo = DBConnection::Conectar();       
+			$this->pdo = DBConnection::StartUp();       
 		}
 		catch(Exception $e)
 		{

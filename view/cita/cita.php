@@ -1,4 +1,8 @@
+
 <br><br>
+<br>  <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
 <div class="container">
 <h1 class="page-header">Citas</h1>
 <div class="well well-sm text-right">
@@ -40,3 +44,6 @@
     </tbody>
 </table> 
 </div>
+      </div>
+        </div>            
+        </div>

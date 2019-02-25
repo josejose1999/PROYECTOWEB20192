@@ -73,6 +73,11 @@
             "url": "//cdn.datatables.net/plug-ins/1.10.19/i18n/Spanish.json"
         }
     } );
+        $('#tabla4').DataTable( {
+        "language": {
+            "url": "//cdn.datatables.net/plug-ins/1.10.19/i18n/Spanish.json"
+        }
+    } );
 
     $('#tabla4').DataTable( {
         "language": {
@@ -83,31 +88,8 @@
 } );    
          </script>
 
-        <script id="tmpl-usuario" type="text/x-jsrender">
-    <?php require_once 'alumno-template.php'; ?>
-</script>
-
-<script>
-    function EditarUsuario(id)
-    {
-        $.post('?c=Alumno&a=Obtener', {
-            id: id
-        }, function(data){
-            var template = $.templates("#tmpl-usuario");
-            $("#frm-alumno").html(template.render(data));
-            $("#modal-alumno").modal();
-        }, 'json')
-    }
-</script>
-
-<script>
-    $(document).ready(function(){
-        $("#frm-alumno").submit(function(){
-            return $(this).validate();
-        });
-    })
-</script>
-  
+    
+    
 
     </body>
 </html>

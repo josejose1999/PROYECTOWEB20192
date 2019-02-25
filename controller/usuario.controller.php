@@ -32,7 +32,7 @@ class UsuarioController{
         if ($_REQUEST['Nombre']=="" or $_REQUEST['username']=="" or $_REQUEST['password']=="" or $_REQUEST['Apellido']=="" or $_REQUEST['Correo']=="") {
             echo'<script type="text/javascript">
             alert("TODOS LOS CAPOS SON OBLIGATORIOS");
-            window.location.href="index.php?c=Usuario";
+            window.location.href="index.php?c=Usuario&a=Crud";
             </script>';
             echo "sapo";
         }else{

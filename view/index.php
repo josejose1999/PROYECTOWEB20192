@@ -1,6 +1,6 @@
 <?php 
 session_start();
-$connect = mysqli_connect("localhost", "root", "", "user");
+$connect = mysqli_connect("localhost", "root", "", "optica");
 
 if(isset($_POST["add_to_cart"]))
 {
@@ -20,7 +20,7 @@ if(isset($_POST["add_to_cart"]))
 		}
 		else
 		{
-			echo '<script>alert("Item Already Added")</script>';
+			echo '<script>alert("Este Producto Ya Fue Añadido")</script>';
 		}
 	}
 	else

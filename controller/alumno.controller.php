@@ -36,17 +36,32 @@ class AlumnoController{
     
     public function Guardar(){
         $alm = new Alumno();
+        if ($_REQUEST['Nombre']=="" or $_REQUEST['Precio']=="") {
+            echo'<script type="text/javascript">
+            alert("TODOS LOS CAPOS SON OBLIGATORIOS");
+            window.location.href="index.php?c=Alumno&a=Crud";
+            </script>';
+        }
+        else{
+            $alm->__SET('id',              $_REQUEST['id']);
+            $alm->__SET('Nombre',          $_REQUEST['Nombre']);
+            $alm->__SET('Precio',          $_REQUEST['Precio']);
+            $alm->__SET('Foto',            $_REQUEST['Foto']);
+
+        }
         
-        $alm->__SET('id',              $_REQUEST['id']);
-        $alm->__SET('Nombre',          $_REQUEST['Nombre']);
-        $alm->__SET('Precio',          $_REQUEST['Precio']);
-        $alm->__SET('Foto',            $_REQUEST['Foto']);
         
         if( !empty( $_FILES['Foto']['name'] ) ){
-            $foto = date('ymdhis') . '-' . strtolower($_FILES['Foto']['name']);
-            move_uploaded_file ($_FILES['Foto']['tmp_name'], 'uploads/' . $foto);
+            $foto = strtolower($_FILES['Foto']['name']);
+            move_uploaded_file ($_FILES['Foto']['tmp_name'], 'img/' . $foto);
             
             $alm->__SET('Foto', $foto);
+        }
+        else{
+             echo'<script type="text/javascript">
+            alert("INGRESE LA IMAGEN DEL PRODUCTO");
+            window.location.href="index.php?c=Alumno&a=Crud";
+            </script>';
         }
 
         if($alm->__GET('id') != '' ? 
