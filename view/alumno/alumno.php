@@ -4,7 +4,11 @@
                     <h1 class="page-header">Productos</h1>
 
                     <div class="well well-sm text-right">
+                        <?php if(isset($_SESSION['aceptado'])){?>
                         <a class="btn btn-primary" href="?c=Alumno&a=Crud">Nuevo Producto</a>
+                        <?php }else{ ?>
+                        <a class="btn btn-primary" href="index.php">No puedes Registrar Nada</a>
+                        <?php }?>
                     </div>
 
                     <table  id= "tabla4" class="table table-striped">
