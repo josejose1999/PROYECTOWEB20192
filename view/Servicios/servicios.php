@@ -108,7 +108,10 @@ Para ver si usted necesita gafas, el médico colocará varios lentes al frente d
                         Carateristicas : Adaptacion de Lentes de Contacto
                       </div>
                       <div class="panel-body">
-                        Hacer una evaluacion completa de la vision y salud ocular, para determinar la lente más adecuada a cada paciente. En este estudio se toman medidas de la córnea tanto de su curvatura como de su diámetro, y se realiza una graduación completa.
+                      <p>Hacer una evaluacion completa de la vision y salud ocular, para determinar la lente más adecuada a cada paciente. En este estudio se toman medidas de la córnea tanto de su curvatura como de su diámetro, y se realiza una graduación completa.</p>
+                       <p>Hacer una evaluacion completa de la vision y salud ocular, para determinar la lente más adecuada a cada paciente. En este estudio se toman medidas de la córnea tanto de su curvatura como de su diámetro, y se realiza una graduación completa.</p>
+                        <p>Hacer una evaluacion completa de la vision y salud ocular, para determinar la lente más adecuada a cada paciente. En este estudio se toman medidas de la córnea tanto de su curvatura como de su diámetro, y se realiza una graduación completa.</p>
+                         <p>Hacer una evaluacion completa de la vision y salud ocular, para determinar la lente más adecuada a cada paciente. En este estudio se toman medidas de la córnea tanto de su curvatura como de su diámetro, y se realiza una graduación completa.</p>
                       </div>
                        <a href="?c=Cita&a=Crud"><button class="btn btn-primary">Obtener Cita</button></a> 
                   </div>
