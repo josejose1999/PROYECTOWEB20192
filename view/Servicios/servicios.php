@@ -11,9 +11,16 @@
                               Caracteristicas del Examen Optometrico
                             </div>
                             <div class="panel-body">
-                              Un optómetra calificado debe practicar el examen optométrico, a todas las personas que resulten positivas en las actividades de detección temprana de las alteraciones de la agudeza visual
+                            <p >Tabla optométrica con la letra E giratoria
+En algunos casos no puede utilizarse la tabla optométrica de Snellen. Un ejemplo de ello es cuando la persona que toma la prueba de la visión es un niño pequeño que no conoce el alfabeto o es demasiado tímido para leer las letras en voz alta. Otros ejemplos incluyen cuando la persona no sabe leer o tiene alguna discapacidad que le impide cognitivamente reconocer las letras o leerlas en voz alta.
+</p>
+<p>En estas situaciones, se utiliza una modificación de la tabla optométrica de Snellen llamada tabla optométrica con la letra E giratoria. La tabla optométrica con la letra E giratoria tiene la misma escala de la tabla optométrica de Snellen, pero todos los caracteres de la tabla son la letra E en diferentes orientaciones espaciales (girada en incrementos de 90 grados).
+</p>
+<p>El doctor de la visión le pide a la persona a la que se le está haciendo la prueba que use alguna de las dos manos con los dedos extendidos para mostrar en qué sentido los 'dedos' de la E están apuntando: hacia la derecha, hacia la izquierda, hacia arriba o hacia abajo.
+</p>
+<p>Los estudios han demostrado que las mediciones de agudeza visual mediante la tabla optométrica con la letra E giratoria son prácticamente las mismas que las obtenidas a partir de los exámenes con la tabla optométrica de Snellen.</p> 
                             </div>
-                       <a href="?c=Cita&a=Crud"><button class="btn btn-primary">Enviar</button></a> 
+                       <a href="?c=Cita&a=Crud"><button class="btn btn-primary">Obtener Cita</button></a> 
             </div>
                         
           </div>
@@ -52,10 +59,15 @@
                         Caracteristicas del Examen Oftalmologico
                       </div>
                       <div class="panel-body colorin">
-                        El examen oftalmológico debe ser una actividad obligatoria para el estudiante de medicina y el médico general. Su realización es
-                        de suma importancia en la atención de pacientes con síntomas oculares, quienes requieren una evaluación oftalmológica completa y una descripción clínica adecuada. 
+                    <p> Primero, le preguntarán si está teniendo algún problema de los ojos o de visión. Le pedirán que describa estos problemas, por cuánto tiempo los ha tenido, y cualquier factor que los haya hecho mejorar o empeorar.</p>
+
+<p>También se revisará su historial de gafas o lentes de contacto. El oftalmólogo le hará luego preguntas respecto a su salud general, incluso cualquier medicamento que usted tome y la historia clínica de su familia.</p>
+
+
+<p>Le pedirán que lea letras al azar que se vuelven más pequeñas línea por la línea a medida que sus ojos se van desplazando hacia abajo en la tabla. Algunas tablas de Snellen son de hecho monitores de video que muestran letras o imágenes.
+Para ver si usted necesita gafas, el médico colocará varios lentes al frente del ojo, uno a la vez, y le preguntará cuándo son más fáciles de ver las letras en la tabla de Snellen. Esto se denomina refracción.</p>
                       </div>
-                      
+                       <a href="?c=Cita&a=Crud"><button class="btn btn-primary">Obtener Cita</button></a> 
                   </div>
                   
               </div>
