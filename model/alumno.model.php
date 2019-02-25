@@ -49,8 +49,7 @@ class AlumnoModel
 	{
 		try 
 		{
-			$stm = $this->pdo
-			           ->prepare("SELECT * FROM productos WHERE id = ?");
+			$stm = $this->pdo->prepare("SELECT * FROM productos WHERE id = ?");
 			          
 
 			$stm->execute(array($id));
@@ -80,9 +79,9 @@ class AlumnoModel
 		try 
 		{
 			$sql = "UPDATE productos SET 
-						Nombre          = ?, 
-                        Precio          = ?,
-                        Foto            = ?
+						name          = ?, 
+                        price          = ?,
+                        image            = ?
 				    WHERE id = ?";
 
 			$this->pdo->prepare($sql)
