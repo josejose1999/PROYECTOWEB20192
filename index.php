@@ -97,7 +97,7 @@ if(!isset($_REQUEST['c']))
     $controller->IndexAdministrar();  
     }
     else{
-        echo"<a href='index.php'><h3>NO TIENES ACCESO A ESTA SECCION</h3></a>";
+        //echo"<a href='index.php'><h3>NO TIENES ACCESO A ESTA SECCION</h3></a>";
     }
 }
 
