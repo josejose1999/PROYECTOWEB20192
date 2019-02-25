@@ -32,13 +32,13 @@
                 <input type="file" name="Foto" placeholder="Ingrese una imagen" />
             </div>     
         </div>
-        <!--<div class="col-xs-6">
+        <div class="col-xs-6">
             <?php if($alm->__GET('Foto') != ''): ?>
                 <div class="img-thumbnail text-center">
                     <img src="img/<?php echo $alm->__GET('Foto'); ?>" style="width:50%;" />
                 </div>
             <?php endif; ?>            
-        </div>-->
+        </div>
     </div>
     
     <hr />

@@ -4,7 +4,11 @@
                     <h1 class="page-header">Productos</h1>
 
                     <div class="well well-sm text-right">
+                        <?php if(isset($_SESSION['aceptado'])){?>
                         <a class="btn btn-primary" href="?c=Alumno&a=Crud">Nuevo Producto</a>
+                        <?php }else{ ?>
+                        <a class="btn btn-primary" href="index.php">No puedes Registrar Nada</a>
+                        <?php }?>
                     </div>
 
                     <table  id= "tabla4" class="table table-striped">
@@ -28,8 +32,8 @@
                                     <td><?php echo $r->__GET('Nombre'); ?></td>
                                     <td><?php echo $r->__GET('Precio'); ?></td>
                                     <td>
-                                        <a onclick="EditarUsuario(<?php echo $r->__GET('id'); ?>);">Editar</a>
-                                        
+                                         <a onclick="EditarUsuario(<?php echo $r->__GET('id'); ?>);">Editar</a>
+                    
                                     </td>
                                     <td>
                                         <a onclick="javascript:return confirm('¿Seguro de eliminar este registro?');" href="?c=Alumno&a=Eliminar&id=<?php echo $r->id; ?>">Eliminar</a>
@@ -55,12 +59,8 @@
                     </div><!-- /.modal -->
 
 
-              </div>
-            </div>            
-        </div>
 
 <script id="tmpl-usuario" type="text/x-jsrender">
-
     <?php require_once 'alumno-template.php'; ?>
 </script>
 

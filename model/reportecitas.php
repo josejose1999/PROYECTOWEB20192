@@ -12,7 +12,7 @@
 	
 	$pdf->SetFillColor(232,232,232);
 	$pdf->SetFont('Arial','B',12);
-	$pdf->Cell(40,6,'FechaTentativa',1,0,'C',1);
+	$pdf->Cell(40,6,'FechaTentativa2',1,0,'C',1);
 	$pdf->Cell(40,6,'HoraCita',1,0,'C',1);
 	$pdf->Cell(40,6,'NombreOptica',1,0,'C',1);
 	$pdf->Cell(45,6,'Nombre',1,0,'C',1);

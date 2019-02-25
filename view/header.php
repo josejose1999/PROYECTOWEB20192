@@ -28,7 +28,7 @@
        <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
 
     </head>
-    <body class="animate" data-spy="scroll" data-target="#scrollspy" data-offset="1">
+    <body  data-spy="scroll" data-target="#scrollspy" data-offset="1">
  <!--BARRA DE NAVEGACIONCABEZA DE ZAPO-->
 
 <!--BUFON VALE VRGA-->
