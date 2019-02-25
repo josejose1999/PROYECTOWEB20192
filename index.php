@@ -115,96 +115,22 @@ if(!isset($_REQUEST['c']) and isset($_SESSION['aceptado']))
 
 else{
     if(isset($_SESSION['aceptado']))
-{
-    // Obtenemos el controlador que queremos cargar
-    $controller2 = strtolower($_REQUEST['c']);
-    $accion = isset($_REQUEST['a']) ? $_REQUEST['a'] : 'Index';
-    
-    // Instanciamos el controlador
-    require_once "controller/$controller2.controller.php";
-    $controller2 = ucwords($controller2) . 'Controller';
-    $controller2 = new $controller2;
-    
-    // Llama la accion
-    call_user_func( array( $controller2, $accion ) );
+    {
+        // Obtenemos el controlador que queremos cargar
+        $controller2 = strtolower($_REQUEST['c']);
+        $accion = isset($_REQUEST['a']) ? $_REQUEST['a'] : 'Index';
+        
+        // Instanciamos el controlador
+        require_once "controller/$controller2.controller.php";
+        $controller2 = ucwords($controller2) . 'Controller';
+        $controller2 = new $controller2;
+        
+        // Llama la accion
+
+        call_user_func( array( $controller2, $accion ) );
+    }
+    else{
+        echo"<a href='index.php'><h3>NO TIENES ACCESO A ESTA SECCION</h3></a>";
+    }
 }
-else{
-    echo"<a href='index.php'><h3>NO TIENES ACCESO A ESTA SECCION</h3></a>";
-}
-}
-
-
-
-// Todo esta lógica hara el papel de un FrontController
-if(!isset($_REQUEST['c'])){
-    // Controlador por defecto
-    require_once 'controller/$controller3.controller.php';
-    $controller3 = ucwords($controller3) . 'Controller';
-    $controller3 = new $controller3;
-    $controller3->Index();    
-} else {
-    
-    // Obtenemos el controlador que queremos cargar
-    require_once 'controller/' . strtolower($_REQUEST['c']) . '.controller.php';
-    $controller3 = $_REQUEST['c'] . 'Controller';
-    $accion     = isset($_REQUEST['a']) ? $_REQUEST['a'] : 'Index';
-    
-
-    
-    // Llama la accion
-    call_user_func( array( $controller3, $accion ) );
-}
-
-
-
- if(!isset($_REQUEST['c']))
-{
-    require_once "controller/$controller4.controller.php";
-    $controller4 = ucwords($controller4) . 'Controller';
-    $controller4 = new $controller4;
-    $controller4->Index();
-
-
-}
-else
-{
-    // Obtenemos el controlador que queremos cargar
-    $controller4 = strtolower($_REQUEST['c']);
-    $accion = isset($_REQUEST['a']) ? $_REQUEST['a'] : 'Index';
-    
-    // Instanciamos el controlador
-    require_once "controller/$controller4.controller.php";
-    $controller4 = ucwords($controller4) . 'Controller';
-    $controller4 = new $controller4;
-    
-    // Llama la accion
-    call_user_func( array( $controller4, $accion ) );
-}
-
-if(!isset($_REQUEST['c']))
-{
-    require_once "controller/$controller5.controller.php";
-    $controller5 = ucwords($controller5) . 'Controller';
-    $controller5 = new $controller5;
-    $controller5->Index();
-
-
-}
-else
-{
-    // Obtenemos el controlador que queremos cargar
-    $controller5 = strtolower($_REQUEST['c']);
-    $accion = isset($_REQUEST['a']) ? $_REQUEST['a'] : 'Index';
-    
-    // Instanciamos el controlador
-    require_once "controller/$controller5.controller.php";
-    $controller5 = ucwords($controller5) . 'Controller';
-    $controller5 = new $controller5;
-    
-    // Llama la accion
-    call_user_func( array( $controller5, $accion ) );
-}
-
-
-
 }

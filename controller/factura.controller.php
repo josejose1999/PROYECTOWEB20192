@@ -1,12 +1,14 @@
 <?php
 require_once 'model/factura/factura.php';
+require_once 'model/factura/detalle.php';
 
 class FacturaController{
     
-    private $model;
+    private $model, $detalle;
     
     public function __CONSTRUCT(){
         $this->model = new Factura();
+        $this->detalle = new Detalle();
     }
     
     public function Index(){
@@ -18,10 +20,10 @@ class FacturaController{
     public function Crud(){
         $alm = new Factura();
         
-        if(isset($_REQUEST['num_factura'])){
-            $alm = $this->model->Obtener($_REQUEST['num_factura']);
+        if(isset($_REQUEST['id'])){
+            $alm = $this->model->Obtener($_REQUEST['id']);
         }
-        
+
         require_once 'view/header.php';
         require_once 'view/factura/factura-ver.php';
         require_once 'view/footer.php';

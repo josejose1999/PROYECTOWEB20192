@@ -74,7 +74,7 @@
                   <h4>Facturas</h4>
                   <!-- <div class="divider-border"></div> -->
                   <!-- <p>Contamos con una gran variedad de armazones</p> -->
-                  <a class="btn btn-default" href="?c=Factura">Ir al crud</a>
+                  <a class="btn btn-default" href="?c=factura">Ir al crud</a>
                 </div>
               </div>  
 

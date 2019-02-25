@@ -46,7 +46,7 @@ class Factura
 		{
 			$result = array();
 
-			$stm = $this->pdo->prepare("SELECT * FROM factura");
+			$stm = $this->pdo->prepare("SELECT f.num_factura, f.fecha, u.Nombre, u.Apellido FROM factura f join usuarios u on u.id = f.id_cliente");
 			$stm->execute();
 
 			return $stm->fetchAll(PDO::FETCH_OBJ);
@@ -61,8 +61,7 @@ class Factura
 	{
 		try 
 		{
-			$stm = $this->pdo
-			          ->prepare("SELECT * FROM factura WHERE num_factura = ?");
+			$stm = $this->pdo->prepare("SELECT f.num_factura, f.fecha, u.Nombre, u.Apellido, u.Correo FROM factura f join usuarios u on u.id = f.id_cliente  where f.num_factura = ?");
 			          
 
 			$stm->execute(array($id));

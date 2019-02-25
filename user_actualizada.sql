@@ -149,6 +149,18 @@ CREATE TABLE IF NOT EXISTS `detalle` (
   `precio` double(7,2) NOT NULL,
   PRIMARY KEY (`num_detalle`,`num_factura`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+--
+-- Datos facturas
+--
+INSERT INTO `factura`(`num_factura`, `id_cliente`, `fecha`) VALUES (1,9,'24/02/2019');
+INSERT INTO `detalle`(`num_detalle`, `num_factura`, `id_producto`, `cantidad`, `precio`) VALUES 
+(1,1,14,5,6105),
+(2,1,17,1,5454);
+
+INSERT INTO `factura`(`num_factura`, `id_cliente`, `fecha`) VALUES (2,9,'23/02/2019');
+INSERT INTO `detalle`(`num_detalle`, `num_factura`, `id_producto`, `cantidad`, `precio`) VALUES 
+(1,2,20,2,246),
+(2,2,22,1,600);
 
 
 ALTER TABLE `citas`
