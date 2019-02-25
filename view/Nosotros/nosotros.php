@@ -8,7 +8,7 @@
         <img src="img/banner-nosotros.jpg" alt="Nosotros" class="img-responsive">
     <div>
 <!--Intro-->
-    <div class="container-fluid">
+    <div class="container">
         <section class="row auto">
         <div class="col-sm-12 center ajuste">
             <h1>Optica MG</h1>
@@ -40,7 +40,7 @@
     </section>
     </div>
     <!--mision,vison,historia-->
-    <div class="container-fluid">
+    <div class="container">
         <div class="row">
             <!--Mision-->
             <div class="col-sm-12 col-xs-12 espacio" id="mision">
