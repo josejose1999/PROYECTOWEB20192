@@ -18,13 +18,13 @@
             <input type="file" name="Foto" placeholder="Ingrese una imagen" />
         </div>     
     </div>
-    <div class="col-xs-6">
+   <!--  <div class="col-xs-6">
         {{if Foto != ''}}
             <div class="img-thumbnail text-center">
                 <img src="img/{{:Foto}}" style="width:50%;" />
             </div>
         {{/if}}            
-    </div>
+    </div> -->
 </div>
 
 <hr />
